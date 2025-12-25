@@ -22,6 +22,6 @@ qemu-system-arm \
 -device virtio-tablet-device \
 -blockdev driver=file,filename=disk.img,node-name=d0 -device virtio-blk-device,drive=d0
 
-Screen shots:
+Screenshots:
 ![desktop_wec2013](./desktop_wec2013.png)
 ![mshearts_wec2013](./mshearts_wec2013.png)
