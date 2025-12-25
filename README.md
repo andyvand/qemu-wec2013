@@ -17,7 +17,7 @@ example usage (image available on github releases):
 qemu-system-arm \
 -global virtio-mmio.force-legacy=false \
 -machine type=vexpress-a15 -m 256 \
--device loader,addr=0x80000000,file=NK.bin.entry-0x800010c0.raw \
+-device loader,addr=0x80000000,file=NK.bin.entry-0x80002ddd.raw \
 -device loader,addr=0x80002ddd,cpu-num=0 \
 -device virtio-tablet-device \
 -blockdev driver=file,filename=disk.img,node-name=d0 -device virtio-blk-device,drive=d0
