@@ -1,5 +1,5 @@
     INCLUDE kxarm.h
-    TEXTAREA
+    TEXTAREA CONFIG=32
 
     EXPORT _wfi
     LEAF_ENTRY _wfi
@@ -10,6 +10,6 @@
     msr cpsr, r0
     bx lr
     
-    ENTRY_END
+    ENDP
 
     END

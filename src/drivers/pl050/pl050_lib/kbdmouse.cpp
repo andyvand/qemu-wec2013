@@ -29,6 +29,16 @@ PARTICULAR PURPOSE.
 #include "ps2mouse.hpp"
 #include "ps2keybd.hpp"
 
+DBGPARAM dpCurSettings = {
+	L"pl050", {
+		L"Errors", L"Warnings", L"Function", L"Info",
+		L"IST", L"Undefined", L"Undefined", L"Undefined",
+		L"Undefined", L"Undefined", L"Undefined", L"Undefined",
+		L"Undefined", L"Undefined", L"Undefined", L"Undefined"
+	},
+	0x0003
+};
+
 ///<file_doc_scope tref="PS2Keybd" visibility="OAK"/>
 
 extern Ps2Keybd *g_pPS2Keybd;

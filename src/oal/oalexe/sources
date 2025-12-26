@@ -30,6 +30,9 @@ EXEENTRY=StartUp
 # into oal.lib
 SOURCES=
 
+NOLIBC=1
+SAFESEH=
+
 # Libraries we're going to link to form the .exe
 # These include:
 # oemmain: implements the OEMInitGlobals function which
@@ -47,3 +50,5 @@ TARGETLIBS= \
     $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\nkldr.lib \
     $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\nkstub.lib \
     $(_PLATLIB)\$(_CPUDEPPATH)\oal.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\gsnull.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\bootcrt.lib

@@ -33,6 +33,7 @@ SOURCES= \
     startup.s \
     timer.c \
     vector.c \
+    rtc.c
 
 FILE_VIEW_ROOT_FOLDER= \
     readme.html \

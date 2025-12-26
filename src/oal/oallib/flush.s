@@ -1,5 +1,5 @@
     INCLUDE kxarm.h
-    TEXTAREA
+    TEXTAREA CONFIG=32
 
     EXPORT _flush
     LEAF_ENTRY _flush
@@ -13,6 +13,6 @@
 
     bx lr
     
-    ENTRY_END
+    ENDP
 
     END

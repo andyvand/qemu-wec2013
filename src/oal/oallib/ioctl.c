@@ -24,9 +24,45 @@ void lcd_config(int width, int height)
 	mmio_write(LCD_BASE + LCDControl, (1 << 11) | (1 << 0) | (5 << 1));
 }
 
-LPCWSTR platformtype_str = L"Pocket PC";
+	LPCWSTR platformtype_str = L"Pocket PC";
 LPCWSTR platformoem_str = L"QEMU vexpress-a15";
 PLATFORMVERSION platformversion[] = {{7, 0}};
+
+BOOL
+OALIoCtlHalInitRTC(
+UINT32 code,
+VOID *pInBuffer,
+UINT32 inSize,
+VOID *pOutBuffer,
+UINT32 outSize,
+UINT32 *pOutSize
+);
+
+BOOL
+OALIoCtlHalRtcAlarm(
+UINT32 code,
+VOID *pInBuffer,
+UINT32 inSize,
+VOID *pOutBuffer,
+UINT32 outSize,
+UINT32 *pOutSize
+);
+
+BOOL
+OALIoCtlHalRtcTime(
+UINT32 code,
+VOID *pInBuffer,
+UINT32 inSize,
+VOID *pOutBuffer,
+UINT32 outSize,
+UINT32 *pOutSize
+);
+
+#define IOCTL_HAL_RTC_TIME    \
+    CTL_CODE(FILE_DEVICE_HAL, 1024, METHOD_BUFFERED, FILE_ANY_ACCESS)
+
+#define IOCTL_HAL_RTC_ALARM    \
+    CTL_CODE(FILE_DEVICE_HAL, 1025, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
 // ---------------------------------------------------------------------------
 // OEMIoControl: REQUIRED
@@ -51,7 +87,15 @@ BOOL OEMIoControl(
 
 	switch (dwIoControlCode)
 	{
+	case IOCTL_HAL_RTC_TIME:
+		OALIoCtlHalRtcTime(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
+		return TRUE;
+	case IOCTL_HAL_RTC_ALARM:
+		OALIoCtlHalRtcAlarm(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
+		return TRUE;
 	case IOCTL_HAL_INIT_RTC:
+		OALIoCtlHalInitRTC(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
+		return TRUE;
 	case IOCTL_HAL_INITREGISTRY:
 	case IOCTL_HAL_POSTINIT:
 	case IOCTL_HAL_ENABLE_WAKE:

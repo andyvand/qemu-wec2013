@@ -28,6 +28,12 @@ _PLATLIB=$(SG_OUTPUT_ROOT)\platform\$(_TGTPLAT)\lib
 # The directory containing platform-common libraries
 _PLATCOMMONLIB=$(SG_OUTPUT_ROOT)\platcomm\$(_TGTPLAT)\lib 
 
+_OEMINCPATH=$(_WINCEROOT)\public\common\sdk\inc
+_OEMINCPATH=$(_OEMINCPATH);$(_WINCEROOT)\public\common\oak\inc
+_OEMINCPATH=$(_OEMINCPATH);$(_WINCEROOT)\public\common\ddk\inc
+
+_ISVINCPATH=$(_WINCEROOT)\public\common\sdk\inc
+
 # Add public include directories so we can include public headers
 INCLUDES=$(_WINCEROOT)\public\common\oak\inc
 INCLUDES=$(INCLUDES);$(_WINCEROOT)\public\common\sdk\inc

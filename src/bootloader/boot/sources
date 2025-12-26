@@ -55,4 +55,5 @@ SOURCES=\
 TARGETLIBS= \
     $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_blcommon.lib \
     $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_blnk.lib \
-    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\fulllibc.lib \
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\gsnull.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\bootcrt.lib \

@@ -21,7 +21,7 @@
 // This function is called by the kernel to retrieve the time from the
 // real-time clock.
 //
-
+#if 0
 BOOL OEMGetRealTime(LPSYSTEMTIME lpst)
 {
 	DWORD timestamp = mmio_read(RTC_BASE + RTCDR);
@@ -100,6 +100,7 @@ BOOL OEMSetAlarmTime(LPSYSTEMTIME lpst)
 
   return TRUE;
 }
+#endif
 
 // ---------------------------------------------------------------------------
 // OEMQueryPerformanceCounter: OPTIONAL
@@ -169,7 +170,7 @@ uint32_t update_timer(void);
 VOID OEMUpdateReschedTime(DWORD dwTick)
 {
 	DWORD interval = 1;
-	DWORD i, z, us;
+	DWORD /*i, z,*/ us;
 
 	//for (i = 0; i < 50000; i++)
 	//	z = mmio_read(SP804_BASE + TimerValue);

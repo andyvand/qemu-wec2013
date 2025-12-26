@@ -25,7 +25,7 @@
     EXPORT  Read_MPIDR
     EXPORT  Do_DSB
 
-	TEXTAREA
+	TEXTAREA CONFIG=32
 
 ; ---------------------------------------------------------------------------
 ; StartUp: REQUIRED
@@ -85,7 +85,15 @@ WAIT
 	; startup requested, prepare core for usage
 	ldr     r0, =g_controlRegs
 	mov     r1, #0
-    add     r1, pc, #g_oalAddressTable - (. + 8) + 12
+	adr     r2, StartUp                     ; r2 = PA of StartUp
+    ldr     r3, =StartUp                    
+    bic     r3, r3, #1                      ; r1 = VA of StartUp
+    sub     r3, r3, r2                      ; r1 = VA - PA
+        
+    ldr     r1, =g_oalAddressTable       ; r0 = VA of oalAddressTable
+    sub     r1, r1, r3                      ; r0 = PA of oalAddressTable
+
+    ; add     r1, pc, #g_oalAddressTable - (. + 8) + 12
     bl      PaFromVa
 	mov     r4, r0
    
@@ -127,13 +135,31 @@ CONT
 	ldr sp, =0x15000000
 
 	mov     r0, #0
-    add     r0, pc, #g_oalAddressTable - (. + 8)
-    b       KernelStart
+	adr     r2, StartUp                     ; r2 = PA of StartUp
+    ldr     r1, =StartUp                    
+    bic     r1, r1, #1                      ; r1 = VA of StartUp
+    sub     r1, r1, r2                      ; r1 = VA - PA
+        
+    ldr     r0, =g_oalAddressTable       ; r0 = VA of oalAddressTable
+    sub     r0, r0, r1                      ; r0 = PA of oalAddressTable
 
+    bl      KernelStart
+    b       .
+
+    RODATAAREA
     ; Include memory configuration file with g_oalAddressTable
+    ALIGN 4
     INCLUDE addrtab_cfg.inc
 
-    ENTRY_END
+	TEXTAREA CONFIG=32
+
+    ; add     r0, pc, #g_oalAddressTable - (. + 8)
+    ; b       KernelStart
+
+    ; Include memory configuration file with g_oalAddressTable
+    ; INCLUDE addrtab_cfg.inc
+
+    ENDP
 
 	LEAF_ENTRY  Read_ControlRegs
 	mrc     p15, 0, r1, c2, c0, 0 ; TTBR0
@@ -145,17 +171,17 @@ CONT
 	mrc     p15, 0, r1, c3, c0, 0 ; Domain
 	str     r1, [r0, #0xc]
 	bx      lr
-	ENTRY_END
+	ENDP
 
     LEAF_ENTRY  Read_MPIDR
 	mrc   p15, 0, r0, c0, c0, 5
 	and   r0, r0, #3
     bx    lr
-    ENTRY_END
+    ENDP
 
     LEAF_ENTRY  Do_DSB
 	dsb
     bx    lr
-    ENTRY_END
+    ENDP
 
 	END

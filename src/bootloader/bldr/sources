@@ -57,7 +57,7 @@ SOURCES= \
 #    boot_core_arm_mmu.lib : bootloader for ARM CPUs, turns MMU on
 TARGETLIBS= \
     $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\gsnull.lib \
-    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\fulllibc.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\bootcrt.lib \
 # Uncomment one of the following and discard the rest.
 #    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\boot_core_x86_bios.lib \
 #    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\boot_core_arm.lib \
