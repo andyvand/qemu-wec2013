@@ -1,5 +1,5 @@
     INCLUDE kxarm.h
-    TEXTAREA
+    TEXTAREA CONFIG=32
 
     EXPORT _dsb
     LEAF_ENTRY _dsb
@@ -7,6 +7,6 @@
     dsb
     bx lr
     
-    ENTRY_END
+    ENDP
 
     END
