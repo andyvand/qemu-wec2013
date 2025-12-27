@@ -2,6 +2,8 @@
 #define mmio_write(reg, data)  *(volatile uint32_t*)(reg) = (data)
 #define mmio_read(reg)  *(volatile uint32_t*)(reg)
 
+#define SYSINTR_LAN9115 SYSINTR_FIRMWARE
+
 enum
 {
 	GIC_BASE = 0x92000000,

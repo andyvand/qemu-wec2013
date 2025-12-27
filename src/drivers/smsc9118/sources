@@ -31,11 +31,13 @@ CDEFINES=$(CDEFINES)
 CDEFINES=$(CDEFINES) -DSMSC_DBG
 !ENDIF
 
+CDEFINES=$(CDEFINES) -DNDIS50_MINIPORT
 
 TARGETLIBS=	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
 		  	$(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\ddk_bus.lib \
 		  	$(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\ddk_dma.lib \
 		  	$(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\ddk_io.lib \
+		  	$(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\ceddk.lib \
 		  	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\ndis.lib \
 		  	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\winsock.lib \
 

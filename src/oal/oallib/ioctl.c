@@ -289,5 +289,3 @@ BOOL OEMIsProcessorFeaturePresent(DWORD dwProcessorFeature)
 	DEBUGMSG(1, (TEXT("OEMProcFeat\r\n")));
   return FALSE;
 }
-
-

@@ -28,9 +28,10 @@ unsigned int irq_mapping[] = {
 	39, // SYSINTR_FIRMWARE + 8, uart2
 	40, // SYSINTR_FIRMWARE + 9, uart3
 	43, // SYSINTR_FIRMWARE + 10, audio
+	41, // SYSINTR_FIRMWARE + 11, lan
 };
 
-#define SYS_IRQS 11
+#define SYS_IRQS 12
 
 unsigned int irq_iar[SYS_IRQS];
 unsigned int irq_armed[SYS_IRQS];

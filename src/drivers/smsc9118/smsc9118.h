@@ -1,9 +1,12 @@
-// All rights reserved ADENEO EMBEDDED 2010
+/*****************************************************************************
+ * Copyright (c) 2010 Texas Instruments Incorporated - http://www.ti.com/
+ * All rights reserved.
+ *****************************************************************************/
 /*****************************************************************************
    
-	Copyright (c) 2004-2008 SMSC. All rights reserved.
+	Copyright (c) 2004-2006 SMSC. All rights reserved.
 
-	Use of this source code is subject to the terms of the SMSC Software
+	Use of this source code is subject to the terms of the Software
 	License Agreement (SLA) under which you licensed this software product.	 
 	If you did not accept the terms of the SLA, you are not authorized to use
 	this source code. 
@@ -54,52 +57,6 @@
 			- Added Support LAN9211 Chip
 			- Changed Register Name ENDIAN to WORD_SWAP According to the Menual
 			- Merged CE6.0 & 5.0 Drivers Together
-		10-24-07   NL               ver 1.11
-			- Added Support LAN9218A/LAN9217A/LAN9216A/LAN9215A Chips
-		01-08-08   AH               ver 1.12
-			- Added Support for LAN9210 Chip
-			- Added Support for LAN9210 Chip
-		06-09-08   AH               ver 1.13
-			- Added Support for LAN9220/21 Chip
-		    - Fixed DMA Xmit Bug.	
-		06-19-08   MDG              ver 1.13
-			- Added IntCfg as modifiable parameter in the Registry
-			- Fixed support for Fixed parameters LinkMode
-			- Removed Support for early FPGA versions (OLD_REGISTERS)
-        -----------------------------------------------------------------------
-        09-26-08   WH
-            - Move to version 2.00 intentionally
-            - From version 2.00, 
-               driver drops support chip ID of 0x011x0000 and 0x011x0001
-        -----------------------------------------------------------------------
-        09-26-08   WH               ver 2.00
-            - replace TAB to SPACE
-            - Reorder initialization routines to avoid 
-               possible unexpect behavior
-            - Fixed the issue Flow Control ignores "FlowControl" key 
-               if not Auto Negotiation
-            - Added "MinLinkChangeWakeUp", "MinMagicPacketWakeUp" and
-               "MinPatternWakeUp" registry key for PM
-            - Fixed PM issues
-                - DHCP doesn't work after wakeup
-                - Disable GPTimer while in sleep mode
-                - Add routine to wakeup chip during Reset
-            - Fix discarding Rx Frame when it is less than 16bytes
-            - Enable RXE & RWT interrupt
-            - Chip goes to D2(Energy Detect Power Down) when there is no link
-               when POWERDOWN_AT_NO_LINK is defined (see smsc9118.h)
-            - Clean up Registers which are absolete
-            - See relnotes.txt for detail
-        11-17-08   WH               ver 2.01
-            - Lan_SetMiiRegW() and Lan_GetMiiRegW are changed to return BOOL.
-              Caller checks return value to detect error
-            - Tx Error Interrupt is enabled
-            - NdisAllocateMemory()
-            - Fixed bug which does't go to AUTOIP when failed to get DHCP addr
-			
-		-----------------------------------------------------------------------
-		07-24-09   RL
-			- Added support for OMAP platform
 *****************************************************************************/
 
 #ifndef _SMSC9118_H_
@@ -108,46 +65,15 @@
 #include "lan9118.h"
 #include "platform.h"
 
-#define OID_NDIS_SMSC_LAN_READ_REGS     			0xFFFF0001U
-#define OID_NDIS_SMSC_MAC_READ_REGS     			0xFFFF0002U
-#define OID_NDIS_SMSC_PHY_READ_REGS     			0xFFFF0003U
-#define OID_NDIS_SMSC_LAN_WRITE_REGS     			0xFFFF0004U
-#define OID_NDIS_SMSC_MAC_WRITE_REGS     			0xFFFF0005U
-#define OID_NDIS_SMSC_PHY_WRITE_REGS     			0xFFFF0006U
-#define OID_NDIS_SMSC_DUMP_LAN_REGS     			0xFFFF0007U
-#define OID_NDIS_SMSC_DUMP_MAC_REGS				0xFFFF0008U
-#define OID_NDIS_SMSC_DUMP_PHY_REGS     			0xFFFF0009U
-#define OID_NDIS_SMSC_DUMP_TX_STATS     			0xFFFF000AU
-#define OID_NDIS_SMSC_DUMP_RX_STATS     			0xFFFF000BU
-#define OID_NDIS_SMSC_SAVE_E2P_TO_FILE     		0xFFFF000CU
-#define OID_NDIS_SMSC_ERASE_E2P     				0xFFFF000DU
-#define OID_NDIS_SMSC_WRITE_FILE_TO_E2P     		0xFFFF000EU
-#define OID_NDIS_SMSC_SEND_E2P_COMMAND			0xFFFF000FU
-#define OID_NDIS_SMSC_READ_E2P    					0xFFFF0010U
-#define OID_NDIS_SMSC_WRITE_E2P    	 			0xFFFF0011U
-#define OID_NDIS_SMSC_READ_E2P_BLOCK    			0xFFFF0012U
-#define OID_NDIS_SMSC_WRITE_E2P_BLOCK     			0xFFFF0013U
-#define OID_NDIS_SMSC_GET_E2P_SIZE  				0xFFFF0014U
-#define OID_NDIS_SMSC_GET_DRIVER_INFO   			0xFFFF0015U
-#define OID_NDIS_SMSC_ENABLE_DEBUG   			       0xFFFF0016U
-#define OID_NDIS_SMSC_ENABLE_RESUME   			0xFFFF0017U
-
-typedef struct _OID_E2P_STRUCT
-{
-	DWORD            E2pSize;           // Do not change the first three fields of the
-	BYTE 			eeprom[512];
-} OID_E2P_STRUCT, *POID_E2P_STRUCT;
+#define TRACE_BUFFER
 
 // CETK may fail at Multicast Test because of imperfect filtering.
 // To do Perform Perfect Multicast Filtering enables following define
 // But, enabling Perfect Filtering will reduce performance
 #define	FOR_CETK
 
-// Put the chip into D2 (Energy Detection Power Down) when there is no link
-//#define	POWERDOWN_AT_NO_LINK
-
-#define DRIVER_VERSION          		0x201
-#define	BUILD_NUMBER					"111708"
+#define DRIVER_VERSION          0x110
+#define	BUILD_NUMBER			"041707"
 
 #define ETHER_HEADER_SIZE               14U
 
@@ -181,26 +107,19 @@ typedef struct _OID_E2P_STRUCT
 
 #define PROTOCOL_RESERVED_LENGTH        16U
 
+#define MMU_WAIT_LOOP 1000000
+
+#define TX_STS_ES                       (0x8000UL)
+
 #define TX_DATA_FIFO_SIZE               4608UL
 
 #define RX_DATA_FIFO_SIZE               10560UL
 
 #define TX_DMA_THRESHOLD                128U
 
-#define	GPT_INT_INTERVAL				(2000UL&0xFFFFUL)	// 200mSec
+#define	GPT_INT_INTERVAL				2000UL		/* 200mSec */
 
 #define	NDIS_ALLOC_FLAG					(0U)		// Flag for NdisAllocMemory and NdisFreeMemory
-
-#define	MAX_EXTRA_CHIP_ID				10
-
-#ifdef	CACHE_LINE_BYTES
-#define	CACHELINE_ALIGN(x)				(((x)+(CACHE_LINE_BYTES-1UL))&~(CACHE_LINE_BYTES-1UL))
-#else
-#error	"CACHE_LINE_BYTES is not defined"
-#endif
-
-// For balancing Tx and Rx, if too many packets are defered 
-#define BALANCE_TX_DEFER_PACKET_LIMIT           40
 
 typedef struct _DRIVER_BLOCK
 {
@@ -208,13 +127,6 @@ typedef struct _DRIVER_BLOCK
     struct _SMSC9118_ADAPTER *AdapterQueue;
 } DRIVER_BLOCK, *PDRIVER_BLOCK;
 
-#ifdef	DEBUG
-// add interrupt counter if want to count/track
-typedef	struct	_INTERRUPT_COUNT
-{
-	DWORD	dwIntWRT;
-} INTERRUPT_COUNT, *PINTERRUPT_COUNT;
-#endif
 
 typedef struct _SMSC9118_WUFF
 {
@@ -294,7 +206,6 @@ typedef struct _SMSC9118_ADAPTER
 
     DWORD 			LinkMode;
 	DWORD           dwAutoMdix;
-	BOOLEAN			fLinkUp;
 
     BYTE 			TxPktBuffer[2048]; 			// Temp buffer for highly fragmented packet
     DWORD 			TDFALevel;
@@ -304,13 +215,15 @@ typedef struct _SMSC9118_ADAPTER
 
     BOOLEAN			RxDPCNeeded, TxDPCNeeded;
     BOOLEAN			PhyDPCNeeded;
+	BOOLEAN			SWDPCNeeded;
+	BOOLEAN			RxStopDPCNeeded;
 	BOOLEAN			RxOverRun;
 
     //Flow control
     BOOLEAN 		fSwFlowControlEnabled;
     BOOLEAN 		fSwFlowControlStarted;
 
-    UINT	   		ucInterruptNumber;
+    ULONG   		ulInterruptNumber;
     UCHAR   		ucAddresses[DEFAULT_MULTICASTLISTMAX][ETHER_LENGTH_OF_ADDRESS];
     UCHAR   		ucStationAddress[ETHER_LENGTH_OF_ADDRESS];
     BYTE    		PhyAddress;
@@ -321,29 +234,17 @@ typedef struct _SMSC9118_ADAPTER
 	HANDLE			hSWIntEvt;
 	volatile LONG	MacCrRxTimeout;
 	volatile LONG	SWIntTimeout;
-
-	// Read from Registry for Extra Chip ID not in the source code
-	// As long as new chip works same way as the chips in this driver,
-	//  user can add additional chip IDs in 
-	DWORD			dwExtraChipIDs[MAX_EXTRA_CHIP_ID];			
-
-	// custom interrupt deassertion time (10usec order)
-	int				dIntrDeas;	
+	volatile LONG	f100RxEnWorkaroundDone;
 
     DWORD 			dwWakeUpSource;
     SMSC9118_WUFF 	Wuff;
-
     //Power management
-    NDIS_DEVICE_POWER_STATE 		CurrentPowerState;
-	NDIS_PM_WAKE_UP_CAPABILITIES	WakeUpCap;
-
-    int             fLoadBalancing;
-#ifdef	DEBUG
-	INTERRUPT_COUNT	IntrCount;
-#endif
+    NDIS_DEVICE_POWER_STATE CurrentPowerState;
+    NDIS_PM_WAKE_UP_CAPABILITIES	WakeUpCap;
+	DWORD			dwDummy;					// for Lint
 } SMSC9118_ADAPTER, *PSMSC9118_ADAPTER;
-
 typedef	const SMSC9118_ADAPTER * const CPCSMSC9118_ADAPTER;
+
 
 typedef struct _SMSC9118_SHAREDMEM
 {
@@ -361,18 +262,16 @@ typedef struct _REG_VALUE_DESCR
 } REG_VALUE_DESCR, *PREG_VALUE_DESCR;
 
 
-#define IOADDRESS  				NDIS_STRING_CONST("IoBaseAddress")
-#define PHYADDRESS  			NDIS_STRING_CONST("PhyAddress")
-#define INTERRUPT  				NDIS_STRING_CONST("InterruptNumber")
-#define RXDMAMODE  				NDIS_STRING_CONST("RxDMAMode")
-#define TXDMAMODE  				NDIS_STRING_CONST("TxDMAMode")
-#define SPEED  					NDIS_STRING_CONST("Speed")
-#define LINKMODE  				NDIS_STRING_CONST("LinkMode")
-#define FLOWCONTROL				NDIS_STRING_CONST("FlowControl")
-#define BUS_TYPE  				NDIS_STRING_CONST("BusType")
-#define AMDIX       			NDIS_STRING_CONST("AutoMdix")
-#define INTCFG  				NDIS_STRING_CONST("IntCfg")
-#define EXTRACHIPID				NDIS_STRING_CONST("ExtraChipIDs")
+#define IOADDRESS  	NDIS_STRING_CONST("IoBaseAddress")
+#define PHYADDRESS  NDIS_STRING_CONST("PhyAddress")
+#define INTERRUPT  	NDIS_STRING_CONST("InterruptNumber")
+#define RXDMAMODE  	NDIS_STRING_CONST("RxDMAMode")
+#define TXDMAMODE  	NDIS_STRING_CONST("TxDMAMode")
+#define SPEED  		NDIS_STRING_CONST("Speed")
+#define LINKMODE  	NDIS_STRING_CONST("LinkMode")
+#define FLOWCONTROL	NDIS_STRING_CONST("FlowControl")
+#define BUS_TYPE  	NDIS_STRING_CONST("BusType")
+#define AMDIX       NDIS_STRING_CONST("AutoMdix")
 #define	INTRDEAS				NDIS_STRING_CONST("IntrDeas")
 #define	MINLINKCHANGEWAKEUP		NDIS_STRING_CONST("MinLinkChangeWakeUp")
 #define	MINMAGICPACKETWAKEUP	NDIS_STRING_CONST("MinMagicPacketWakeUp")
@@ -414,11 +313,15 @@ VOID EnableSwFlowControlHD(IN CPCSMSC9118_ADAPTER pAdapter);
 VOID DisableSwFlowControlFD(IN CPCSMSC9118_ADAPTER pAdapter);
 VOID DisableSwFlowControlHD(IN CPCSMSC9118_ADAPTER pAdapter);
 
+VOID E2PROMExecCmd(IN CPCSMSC9118_ADAPTER pAdapter, const DWORD Cmd);
+VOID E2PROMWriteDefaultAddr(IN CPCSMSC9118_ADAPTER pAdapter);
+
 WORD CalculateCrc16(const BYTE * bpData, const DWORD dwLen, const BOOL fBitReverse);
 VOID SetWakeUpFrameFilter(IN PSMSC9118_ADAPTER pAdapter, const NDIS_PM_PACKET_PATTERN * const pPattern, const DWORD FilterNo);
 VOID ResetWakeUpFrameFilter(IN PSMSC9118_ADAPTER pAdapter, const NDIS_PM_PACKET_PATTERN * const pPattern);
 VOID ConfigWUFFReg(IN CPCSMSC9118_ADAPTER pAdapter);
-BOOL SetPowerState(IN PSMSC9118_ADAPTER pAdapter, const NDIS_DEVICE_POWER_STATE DevicePowerState);
+VOID SetPowerState(IN PSMSC9118_ADAPTER pAdapter, const NDIS_DEVICE_POWER_STATE DevicePowerState);
+BOOL Wakeup9118(IN CPCSMSC9118_ADAPTER pAdapter);
 
 NDIS_STATUS InitializeQueues(IN PSMSC9118_ADAPTER pAdapter);
 
@@ -453,16 +356,7 @@ void EnableMacRxEn(CPCSMSC9118_ADAPTER pAdapter);
 NDIS_STATUS SetMulticastAddressListForRev1(PSMSC9118_ADAPTER pAdapter);
 NDIS_STATUS SetPacketFilterForRev1(IN PSMSC9118_ADAPTER pAdapter);
 void HandlerRxStopISR(PSMSC9118_ADAPTER pAdapter);
-static VOID RxForceReceiverDiscard(PSMSC9118_ADAPTER pAdapter);
-void B2BWriteDelay(DWORD dwLanBase, DWORD iter);
-void DisableGPTimer(IN const PSMSC9118_ADAPTER pAdapter);
-void DecodeExtraChipId(IN const PSMSC9118_ADAPTER pAdapter, BINARY_DATA *pBD);
-BOOL CheckExtraID(IN const PSMSC9118_ADAPTER pAdapter, const DWORD IdRev);
-NDIS_STATUS ReadConfigFromRegistry(IN const PSMSC9118_ADAPTER pAdapter, IN  NDIS_HANDLE hConfigurationHandle);
-void NicEnableInterrupt(IN const PSMSC9118_ADAPTER pAdapter);
-void NicDisableInterrupt(IN const PSMSC9118_ADAPTER pAdapter);
+void MacRxEnWorkaround(PSMSC9118_ADAPTER pAdapter);
 void Reset118(IN const PSMSC9118_ADAPTER pAdapter);
-void ResetAndRestore(IN const PSMSC9118_ADAPTER pAdapter);
-PVOID AllocatePhysicalContiguousBuffer(IN SIZE_T NumberOfBytes, OUT PHYSICAL_ADDRESS *pPhysicalAddress);
 #endif // _SMSC9118_H_
 
