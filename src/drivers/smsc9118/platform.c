@@ -102,6 +102,8 @@
 #include <Pkfuncs.h>
 #include <ceddk.h>
 #include <initguid.h>
+
+#include "gpio.h"
 //#include <ceddkex.h>
 //#include "sdk_gpio.h"
 #include "smsc9118.h"
@@ -123,6 +125,20 @@ void PlatformSetBusWidth(const DWORD dwBusWidth)
  */
 void PlatformInitialize()
 {
+	SMSC_TRACE0(DBG_INIT, "+PlatformInitialize()\r\n");
+
+	hGPIO = GPIOOpen();
+	if (hGPIO == NULL)
+	{
+		SMSC_WARNING0("Failed to open GPIO bus driver !\r\n");
+	}
+	else
+	{
+		// Configure GPIO as input with level low interrupt
+		GPIOSetMode(hGPIO, LAN9311_IRQ_GPIO, GPIO_DIR_INPUT | GPIO_INT_LOW);
+	}
+
+	SMSC_TRACE0(DBG_INIT, "-PlatformInitialize()\r\n");
 }
 
 void PlatformSetBusTiming(const DWORD dwChipIdReg)

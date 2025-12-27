@@ -108,6 +108,36 @@
 #include "lan9118.h"
 #include "platform.h"
 
+#define OID_NDIS_SMSC_LAN_READ_REGS     			0xFFFF0001U
+#define OID_NDIS_SMSC_MAC_READ_REGS     			0xFFFF0002U
+#define OID_NDIS_SMSC_PHY_READ_REGS     			0xFFFF0003U
+#define OID_NDIS_SMSC_LAN_WRITE_REGS     			0xFFFF0004U
+#define OID_NDIS_SMSC_MAC_WRITE_REGS     			0xFFFF0005U
+#define OID_NDIS_SMSC_PHY_WRITE_REGS     			0xFFFF0006U
+#define OID_NDIS_SMSC_DUMP_LAN_REGS     			0xFFFF0007U
+#define OID_NDIS_SMSC_DUMP_MAC_REGS				0xFFFF0008U
+#define OID_NDIS_SMSC_DUMP_PHY_REGS     			0xFFFF0009U
+#define OID_NDIS_SMSC_DUMP_TX_STATS     			0xFFFF000AU
+#define OID_NDIS_SMSC_DUMP_RX_STATS     			0xFFFF000BU
+#define OID_NDIS_SMSC_SAVE_E2P_TO_FILE     		0xFFFF000CU
+#define OID_NDIS_SMSC_ERASE_E2P     				0xFFFF000DU
+#define OID_NDIS_SMSC_WRITE_FILE_TO_E2P     		0xFFFF000EU
+#define OID_NDIS_SMSC_SEND_E2P_COMMAND			0xFFFF000FU
+#define OID_NDIS_SMSC_READ_E2P    					0xFFFF0010U
+#define OID_NDIS_SMSC_WRITE_E2P    	 			0xFFFF0011U
+#define OID_NDIS_SMSC_READ_E2P_BLOCK    			0xFFFF0012U
+#define OID_NDIS_SMSC_WRITE_E2P_BLOCK     			0xFFFF0013U
+#define OID_NDIS_SMSC_GET_E2P_SIZE  				0xFFFF0014U
+#define OID_NDIS_SMSC_GET_DRIVER_INFO   			0xFFFF0015U
+#define OID_NDIS_SMSC_ENABLE_DEBUG   			       0xFFFF0016U
+#define OID_NDIS_SMSC_ENABLE_RESUME   			0xFFFF0017U
+
+typedef struct _OID_E2P_STRUCT
+{
+	DWORD            E2pSize;           // Do not change the first three fields of the
+	BYTE 			eeprom[512];
+} OID_E2P_STRUCT, *POID_E2P_STRUCT;
+
 // CETK may fail at Multicast Test because of imperfect filtering.
 // To do Perform Perfect Multicast Filtering enables following define
 // But, enabling Perfect Filtering will reduce performance

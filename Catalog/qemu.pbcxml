@@ -24,6 +24,7 @@
     <Title>Template OAL</Title>
     <Description>OAL Tutorial and Template BSP Instructions</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE OAL SOURCE CODE</Title>
@@ -34,6 +35,7 @@
     <Title>Template Bootloader (BLCommon)</Title>
     <Description>Bootloader Template using BLCommon Framework</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE BOOTLOADER SOURCE CODE USING BLCOMMON FRAMEWORK</Title>
@@ -44,6 +46,7 @@
     <Title>Template Bootloader (CEBF)</Title>
     <Description>Bootloader Template using CE Boot Framework</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE BOOTLOADER SOURCE CODE USING CE BOOT FRAMEWORK</Title>
@@ -54,6 +57,7 @@
     <Title>Template Config Files</Title>
     <Description>BSP Config Files Template</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE CONFIG FILES SOURCE CODE</Title>
@@ -64,6 +68,7 @@
     <Title>Template KITL</Title>
     <Description>KITL Template</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE KITL SOURCE CODE</Title>
@@ -74,6 +79,7 @@
     <Title>Template LAN Driver</Title>
     <Description>LAN9118 LAN Driver</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE STREAM DRIVER SOURCE CODE</Title>
@@ -84,6 +90,7 @@
     <Title>Template Stream Driver</Title>
     <Description>Stream Driver Template</Description>
     <Type>BspSpecific</Type>
+    <ChooseOneGroup>true</ChooseOneGroup>
     <Location />
     <SourceCode>
       <Title>TEMPLATE STREAM DRIVER SOURCE CODE</Title>

@@ -362,6 +362,8 @@ BOOL Lan_Initialize(PLAN9118_DATA const pLan9118Data, const DWORD dwLanBase)
     InitializeCriticalSection(&csAccessMacReg);
     InitializeCriticalSection(&csAccessPhyReg);
 
+	SMSC_TRACE0(DBG_INIT, "+InitializedCriticalSection\r\n");
+
     if (dwLanBase==0x0UL) 
     {
         SMSC_WARNING0("Lan_Initialize(dwLanBase==0)\r\n");
@@ -371,22 +373,32 @@ BOOL Lan_Initialize(PLAN9118_DATA const pLan9118Data, const DWORD dwLanBase)
     pLan9118Data->dwLanBase = dwLanBase;
 
     // write BYTE_TEST to wake chip up in case it is in sleep mode
-    Lan_Wakeup9118(pLan9118Data);
+#if 0
+	Lan_Wakeup9118(pLan9118Data);
     
-    SetRegDW(dwLanBase, HW_CFG, HW_CFG_SRST_);
-    dwTimeout=100000UL;
+	SMSC_TRACE0(DBG_INIT, "+Lan_Wakeup9118 done\r\n");
+#endif
+
+	SetRegDW(dwLanBase, HW_CFG, HW_CFG_SRST_);
+
+	SMSC_TRACE0(DBG_INIT, "+SetRegDW HW_CFG done\r\n");
+	
+	dwTimeout = 100000UL;
     do 
     {
         SMSC_MICRO_DELAY(10U);
         dwTemp = GetRegDW(dwLanBase,HW_CFG);
-        dwTimeout--;
+
+		SMSC_TRACE1(DBG_INIT, "+GetRegDW HW_CFG %u\r\n", dwTemp);
+		
+		dwTimeout--;
     } while ((dwTimeout > 0UL) && (dwTemp & HW_CFG_SRST_));
 
     if (dwTemp & HW_CFG_SRST_) 
     {
         SMSC_WARNING0("  Failed to complete reset.\r\n");
         goto DONE;
-    }
+}
 
     // Aug/4/2008 WH
     // Enable PME_EN & PME_POL to active low
@@ -394,9 +406,14 @@ BOOL Lan_Initialize(PLAN9118_DATA const pLan9118Data, const DWORD dwLanBase)
     dwTemp |= PMT_CTRL_PME_EN_;
     SetRegDW(dwLanBase, PMT_CTRL, dwTemp);
 
+	SMSC_TRACE0(DBG_INIT, "+SetRegDW PMT_CTRL done\r\n");
+
     result = TRUE;
 
     pLan9118Data->dwIdRev = GetRegDW(dwLanBase, ID_REV);
+
+	SMSC_TRACE1(DBG_INIT, "+GetRegDW ID_REV %u\r\n", pLan9118Data->dwIdRev);
+
     pLan9118Data->LanInitialized = (BOOLEAN)TRUE;
 
 DONE:
@@ -999,8 +1016,8 @@ BOOL Lan_EstablishLink(PLAN9118_DATA pLan9118Data, const DWORD dwLinkRequest, co
             goto DONE;
         }
 
-        wTemp = (WORD)(wTemp & ~(PHY_ANEG_ADV_PAUSE_OP_ | PHY_ANEG_ADV_SPEED_));
-        if (dwLinkRequest & LINKMODE_ASYM_PAUSE)
+		wTemp = (WORD)(wTemp & ~(PHY_ANEG_ADV_PAUSE_OP_ | PHY_ANEG_ADV_SPEED_));
+		if (dwLinkRequest & LINKMODE_ASYM_PAUSE)
         {
             wTemp = (WORD)(wTemp | PHY_ANEG_ADV_ASYM_PAUSE_);
         }

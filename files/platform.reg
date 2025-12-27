@@ -18,8 +18,8 @@
 
 ; @CESYSGEN IF CE_MODULES_DEVICE
 
-[HKEY_LOCAL_MACHINE/DEBUGZONES]
-    "pl050"=DWORD:FFFF
+[HKEY_LOCAL_MACHINE\DEBUGZONES]
+    "pl050"=dword:ffff
 
 [HKEY_LOCAL_MACHINE\System\GDI\Drivers]
     "Display"="ddi_hflat.dll"
@@ -79,9 +79,10 @@
 [HKEY_LOCAL_MACHINE\Comm\SMSC91181\Parms]
     "BusNumber"=dword:0
     "BusType"=dword:0
-	"SysIntr"=dword:10				; FIXED in the OAL to SYSINTR_FIRMWARE + 0
-    "IoBaseAddress"=dword:9a000000  ; ETHERNET_BASE (Physical Addr)
-    "PhyAddress"=dword:02           ; PHY address (0x20:Auto, 0xFF:Internal)
+    "InterruptNumber"=dword:f
+    "IoBaseAddress"=dword:9A000000  ; ETHERNET_BASE (Physical Addr)
+    "SysIntr"=dword:15
+    "PhyAddress"=dword:20           ; PHY address (0x20:Auto, 0xFF:Internal)
     "RxDMAMode"=dword:0             ; 1-DMA, 0-PIO
     "TxDMAMode"=dword:0             ; 1-DMA, 0-PIO
     "FlowControl"=dword:1           ; 1-Enabled, 0-Disabled
@@ -94,7 +95,7 @@
     ; 1: Override strap, Disable Auto Mdix, CrossOver cable
     ; 2: Override strap, Enable Auto Mdix
     ; Others or No Keyword: AutoMdix controlled by strap 
-    "AutoMdix"=dword:4 
+    "AutoMdix"=dword:3 
     ; INT_CFG value applied following HW_CFG_SRST_.  Note valid settings below:
      "IntCfg"=dword:0               ; bit4:IRQ_POL, bit0:IRQ_TYP (11/10/1/0)
     ;----------------------------------------------------------------------
@@ -115,16 +116,16 @@
     ;   } NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE;
     ;  
     ; See NDIS Powermanagement Comment in PUBLIC\COMMON\OAK\FILES\COMMON.REG
-     "MinLinkChangeWakeUp"=dword:3
-     "MinMagicPacketWakeUp"=dword:3
-     "MinPatternWakeUp"=dword:3
+     "MinLinkChangeWakeUp"=dword:2
+     "MinMagicPacketWakeUp"=dword:2
+     "MinPatternWakeUp"=dword:2
     ;----------------------------------------------------------------------
 
 [HKEY_LOCAL_MACHINE\Comm\SMSC91181\Parms\TcpIp]
     "EnableDHCP"=dword:1
-    "IpAddress"="192.168.128.94"
+    "IpAddress"="192.168.1.118"
     "Subnetmask"="255.255.255.0"
-    "DefaultGateway"="192.168.128.249"
+    "DefaultGateway"="192.168.1.1"
     "UseZeroBroadcast"=dword:0
 
 ;---------------------------------------------------------------------------

@@ -187,8 +187,6 @@ UINT32 outSize,
 UINT32 *pOutSize
 )
 {
-	DEBUGMSG(1, L"+OALIoCtlHalRtcTime()\r\n");
-
 	if (!s_rtc.initialized)
 	{
 		s_rtc.pl031.base = (void *)RTC_BASE;
@@ -236,8 +234,6 @@ OALIoCtlHalInitRTC(
     DWORD           dwRegVal = 0;
     ULONG           time = 0;
 
-	DEBUGMSG(1, L"+OALIoCtlHalInitRTC()\r\n");
-
     // Initialize RTC critical section
     InitializeCriticalSection(&s_rtc.cs);
 
@@ -259,18 +255,11 @@ OALIoCtlHalInitRTC(
         }
     }
 
-    // Check for a clean boot of device - if so, reset date/time to system default (LTK2026)
-	DEBUGMSG(1, L"OALIoCtlHalInitRTC(): Getting RTC\r\n");
-
     //  Read the base time
     ReadBaseTime( &s_rtc.baseFiletime );
 
 	// Convert time
 	FiletimeToHWTime(s_rtc.baseFiletime, bcdTime);
-
-	DEBUGMSG(1, L"OALIoCtlHalInitRTC(): RTC = ");
-	DEBUGMSG(1, HWTimeToString(bcdTime));
-	DEBUGMSG(1, L"\r\n");
 
     // Now update RTC state values
 	s_rtc.initialized = TRUE;
@@ -278,8 +267,6 @@ OALIoCtlHalInitRTC(
 
     //  Success
     rc = TRUE;
-
-	DEBUGMSG(1, L"-OALIoCtlHalInitRTC() end\r\n");
 
     return rc;
 }
@@ -300,8 +287,6 @@ OEMGetRealTime(
     DWORD       delta;
     ULONGLONG   time;
 
-	DEBUGMSG(1, L"+OEMGetRealTime()\r\n");
-
     if (!s_rtc.initialized)
     {
 		s_rtc.pl031.base = (void *)RTC_BASE;
@@ -315,10 +300,6 @@ OEMGetRealTime(
     time = s_rtc.baseFiletime + ((ULONGLONG)delta) * 10000;
     NKFileTimeToSystemTime((FILETIME*)&time, pSystemTime);
     LeaveCriticalSection(&s_rtc.cs);
-
-	DEBUGMSG(1, L"-OEMGetRealTime() = ");
-	DEBUGMSG(1, SystemTimeToString(pSystemTime));
-	DEBUGMSG(1, L"\r\n");
 
     return TRUE;
 }
@@ -338,10 +319,6 @@ OEMSetRealTime(
 
     ULONGLONG   fileTime;
     DWORD       tickDelta;
-
-	DEBUGMSG(1, L"+OEMSetRealTime(");
-	DEBUGMSG(1, SystemTimeToString(pSystemTime));
-	DEBUGMSG(1, L"\r\n");
 
 	if (!s_rtc.initialized)
 	{
@@ -374,8 +351,6 @@ OEMSetRealTime(
 
         LeaveCriticalSection(&s_rtc.cs);
     }
-
-	DEBUGMSG(1, L"-OEMSetRealTime\r\n");
 
     return rc;
 }
@@ -414,10 +389,6 @@ OEMSetAlarmTime(
                 ) 
 {
     BOOL rc = FALSE;
-
-	DEBUGMSG(1, L"+OEMSetAlarmTime(");
-	DEBUGMSG(1, SystemTimeToString(pSystemTime));
-	DEBUGMSG(1, L"\r\n");
 
 	if (!s_rtc.initialized)
 	{
@@ -465,8 +436,6 @@ OEMSetAlarmTime(
         mmio_write32((ULONGLONG)s_rtc.pl031.base + RTC_MR, AlarmTime);
 		pl031_alarm_irq_enable(TRUE);
 
-		DEBUGMSG(1, L"+OEMSetAlarmTime Alarm set. resetting\r\n");
-
         // Done
         rc = TRUE;
     }
@@ -493,8 +462,6 @@ OALIoCtlHalRtcAlarm(
                     UINT32 *pOutSize
                     )
 {
-	DEBUGMSG(1, L"+OALIoCtlHalRtcAlarm()\r\n");
-
     //Time Sync with kernel time
     OALIoCtlHalRtcTime(0, NULL, 0, NULL, 0, NULL);
 
