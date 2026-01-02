@@ -3,98 +3,95 @@
   <FileInformation Id="FileInformation:qemu:qemu">
     <Title>qemu</Title>
     <Description>qemu BSP Catalog Items</Description>
+    <Comment>BSP for qemu vexpress-a15</Comment>
     <Vendor>qemu</Vendor>
-    <OSVersion>8.00</OSVersion>
+    <OSVersion>7.00</OSVersion>
     <FileVersion>8.00</FileVersion>
   </FileInformation>
   <Bsp Id="Bsp:qemu:qemu:ARMV7">
-    <Title>QEMU: ARMV7</Title>
+    <Title>QEMU:ARMV7</Title>
     <Description>BSP for QEMU vexpress-a15</Description>
     <PlatformDirectory>qemu</PlatformDirectory>
     <CpuId>Cpu:ARMV7</CpuId>
-    <BspItemId>Item:qemu:TemplateBootloader:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateBootloader2:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateBSPConfigFiles:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateOAL:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateKITL:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateStreamDriver:BSPTemplate_qemu</BspItemId>
-    <BspItemId>Item:qemu:TemplateLAN9118:BSPTemplate_qemu</BspItemId>
+    <BspItemId>Item:qemu:QemuBootloaderBoot:Boot</BspItemId>
+    <BspItemId>Item:qemu:QemuBootloaderBldr:Boot</BspItemId>
+    <BspItemId>Item:qemu:QemuOAL:OAL</BspItemId>
+    <BspItemId>Item:qemu:QemuKITL:KITL</BspItemId>
+    <BspItemId>Item:qemu:QemuPL011:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuPL041:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuPL050:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuVirtioBLK:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuVirtioTablet:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuLAN9118:Drivers</BspItemId>
   </Bsp>
-  <Item Id="Item:qemu:TemplateOAL:BSPTemplate_qemu">
-    <Title>Template OAL</Title>
-    <Description>OAL Tutorial and Template BSP Instructions</Description>
+  <Item Id="Item:qemu:QemuOAL:OAL">
+    <Title>OAL Loader</Title>
+    <Description>OAL Loader</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE OAL SOURCE CODE</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\OAL\OALLIB</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_OAL</Variable>
+    <Location>\OAL</Location>
   </Item>
-  <Item Id="Item:qemu:TemplateBootloader:BSPTemplate_qemu">
-    <Title>Template Bootloader (BLCommon)</Title>
-    <Description>Bootloader Template using BLCommon Framework</Description>
+  <Item Id="Item:qemu:QemuBootloaderBoot:Boot">
+    <Title>Qemu Bootloader (BLCommon)</Title>
+    <Description>Bootloader using BLCommon Framework</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE BOOTLOADER SOURCE CODE USING BLCOMMON FRAMEWORK</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\BOOTLOADER\BOOT</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_BOOT</Variable>
+    <Location>\BOOTLOADER\BOOT</Location>
   </Item>
-  <Item Id="Item:qemu:TemplateBootloader2:BSPTemplate_qemu">
-    <Title>Template Bootloader (CEBF)</Title>
-    <Description>Bootloader Template using CE Boot Framework</Description>
+  <Item Id="Item:qemu:QemuBootloaderBldr:Boot">
+    <Title>Qemu Bootloader (CEBF)</Title>
+    <Description>Bootloader using CE Boot Framework</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE BOOTLOADER SOURCE CODE USING CE BOOT FRAMEWORK</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\BOOTLOADER\BLDR</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_BLDR</Variable>
+    <Location>\BOOTLOADER\BLDR</Location>
   </Item>
-  <Item Id="Item:qemu:TemplateBSPConfigFiles:BSPTemplate_qemu">
-    <Title>Template Config Files</Title>
-    <Description>BSP Config Files Template</Description>
+  <Item Id="Item:qemu:QemuKITL:KITL">
+    <Title>KITL</Title>
+    <Description>KITL</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE CONFIG FILES SOURCE CODE</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\FILES</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_KITL</Variable>
+    <Location>\KITL</Location>
   </Item>
-  <Item Id="Item:qemu:TemplateKITL:BSPTemplate_qemu">
-    <Title>Template KITL</Title>
-    <Description>KITL Template</Description>
-    <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE KITL SOURCE CODE</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\KITL</Path>
-    </SourceCode>
-  </Item>
-  <Item Id="Item:qemu:TemplateLAN9118:BSPTemplate_qemu">
-    <Title>Template LAN Driver</Title>
+  <Item Id="Item:qemu:QemuLAN9118:Drivers">
+    <Title>LAN Driver</Title>
     <Description>LAN9118 LAN Driver</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE STREAM DRIVER SOURCE CODE</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\DRIVERS\SMSC9118</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_LAN9118</Variable>
+    <Location>\DRIVERS\SMSC9118</Location>
   </Item>
-  <Item Id="Item:qemu:TemplateStreamDriver:BSPTemplate_qemu">
-    <Title>Template Stream Driver</Title>
-    <Description>Stream Driver Template</Description>
+  <Item Id="Item:qemu:QemuPL011:Drivers">
+    <Title>PL011</Title>
+    <Description>PL011 Driver</Description>
     <Type>BspSpecific</Type>
-    <ChooseOneGroup>true</ChooseOneGroup>
-    <Location />
-    <SourceCode>
-      <Title>TEMPLATE STREAM DRIVER SOURCE CODE</Title>
-      <Path>$(_WINCEROOT)\PLATFORM\QEMU\SRC\DRIVERS\STREAMDRIVER</Path>
-    </SourceCode>
+    <Variable>BSP_QEMU_PL011</Variable>
+    <Location>\DRIVERS\PL011</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuPL041:Drivers">
+    <Title>Qemu PL041</Title>
+    <Description>PL041 Driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_PL041</Variable>
+    <Location>\DRIVERS\PL041</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuPL050:Drivers">
+    <Title>Qemu PL050</Title>
+    <Description>PL050 Driver Library</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_PL050</Variable>
+    <Location>\DRIVERS\PL050</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuVirtioTablet:Drivers">
+    <Title>VirtioTablet Driver</Title>
+    <Description>Virtio Tablet Driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_VIRTIOTABLET</Variable>
+    <Location>\DRIVERS\VIRTIO_TABLET</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuVirtioBLK:Drivers">
+    <Title>VirtioBLK Driver</Title>
+    <Description>Virtio Block Driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_VIRTIOBLK</Variable>
+    <Location>\DRIVERS\VIRTIO_BLK</Location>
   </Item>
 </CatalogFile>

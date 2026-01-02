@@ -8,6 +8,14 @@
 
 bool space_check(char lhs, char rhs) { return (lhs == rhs) && (lhs == ' '); }
 
+#ifndef uint8_t
+#define uint8_t unsigned char
+#endif
+
+#ifndef uint32_t
+#define uint32_t unsigned int
+#endif
+
 uint32_t search_entry(std::istream& str, std::string search)
 {
     str.clear();

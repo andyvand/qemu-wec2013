@@ -1,0 +1,10 @@
+; All rights reserved ADENEO EMBEDDED 2010
+; @CESYSGEN IF CE_MODULES_NDIS
+;-------------------------------------------------------------------------------
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\pl011]
+    "Dll"="pl011.dll"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "IoBase"=dword:910a0000
+    "SysIntr"=dword:17
+    "Prefix"="COM"
+; @CESYSGEN ENDIF CE_MODULES_NDIS
