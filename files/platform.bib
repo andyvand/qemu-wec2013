@@ -73,6 +73,30 @@ ddi_hflat.dll          $(_FLATRELEASEDIR)\ddi_hflat.dll            NK     SHK
 ENDIF BSP_DISPLAY_HFLAT
 ; @CESYSGEN ENDIF CE_MODULES_DISPLAY
 
+IF BSP_QEMU_PL011
+pl011.dll  $(_FLATRELEASEDIR)\pl011.dll               NK	SHK
+ENDIF BSP_QEMU_PL011
+
+IF BSP_QEMU_PL041
+pl041.dll  $(_FLATRELEASEDIR)\pl041.dll               NK	SHK
+ENDIF BSP_QEMU_PL041
+
+IF BSP_QEMU_PL050
+pl050.dll  $(_FLATRELEASEDIR)\pl050.dll               NK	SHK
+ENDIF BSP_QEMU_PL050
+
+IF BSP_QEMU_LAN9118
+smsc9118.dll  $(_FLATRELEASEDIR)\smsc9118.dll         NK	SHK
+ENDIF BSP_QEMU_LAN9118
+
+IF BSP_QEMU_VIRTIOBLK
+virtio_blk.dll  $(_FLATRELEASEDIR)\virtio_blk.dll     NK	SHK
+ENDIF BSP_QEMU_VIRTIOBLK
+
+IF BSP_QEMU_VIRTIOTABLET
+virtio_tablet.dll  $(_FLATRELEASEDIR)\virtio_tablet.dll NK	SHK
+ENDIF BSP_QEMU_VIRTIOTABLET
+
 ; @CESYSGEN ENDIF CE_MODULES_DEVICE
 
 ; The FILES section describes any files that stored in the image but not

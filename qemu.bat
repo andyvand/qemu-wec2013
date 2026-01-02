@@ -21,3 +21,9 @@
 @REM being included in the initial device registry.
 
 set BSP_DISPLAY_HFLAT=1
+set BSP_QEMU_PL011=1
+set BSP_QEMU_PL041=1
+set BSP_QEMU_PL050=1
+set BSP_QEMU_LAN9118=1
+set BSP_QEMU_VIRTIOBLK=1
+set BSP_QEMU_VIRTIOTABLET=1

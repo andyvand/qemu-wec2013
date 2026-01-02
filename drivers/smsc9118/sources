@@ -51,11 +51,14 @@ POSTLINK_PASS_CMD=postlink.bat
 PRELINK_PASS_CMD=prelink.bat
 FILE_VIEW_ROOT_FOLDER= \
     prelink.bat \
-    postlink.bat
+    postlink.bat \
+
+FILE_VIEW_INCLUDES_FOLDER= \
 
 FILE_VIEW_PARAMETER_FOLDER= \
     smsc9118.bib \
     smsc9118.reg \
     smsc9118.dat \
     smsc9118.db \
-    ProjSysgen.bat
+    ProjSysgen.bat \
+

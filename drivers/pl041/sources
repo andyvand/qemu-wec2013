@@ -52,11 +52,15 @@ POSTLINK_PASS_CMD=postlink.bat
 PRELINK_PASS_CMD=prelink.bat
 FILE_VIEW_ROOT_FOLDER= \
     prelink.bat \
-    postlink.bat
+    postlink.bat \
+
+FILE_VIEW_INCLUDES_FOLDER= \
 
 FILE_VIEW_PARAMETER_FOLDER= \
     pl041.bib \
     pl041.reg \
     pl041.dat \
     pl041.db \
-    ProjSysgen.bat
+    ProjSysgen.bat \
+
+

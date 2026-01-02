@@ -1,5 +1,5 @@
 ; All rights reserved ADENEO EMBEDDED 2010
-; @CESYSGEN IF CE_MODULES_NDIS
+; @CESYSGEN IF CE_MODULES_DEVICE
 ;-------------------------------------------------------------------------------
 [HKEY_LOCAL_MACHINE\Drivers\BuiltIn\virtio_blk]
     "Dll"="virtio_blk.dll"
@@ -7,4 +7,4 @@
     "IoBase"=dword:91130400
     "Prefix"="DSK"
     "SysIntr"=dword:14
-; @CESYSGEN ENDIF CE_MODULES_NDIS
+; @CESYSGEN ENDIF CE_MODULES_DEVICE

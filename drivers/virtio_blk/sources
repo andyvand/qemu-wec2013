@@ -31,11 +31,14 @@ POSTLINK_PASS_CMD=postlink.bat
 PRELINK_PASS_CMD=prelink.bat
 FILE_VIEW_ROOT_FOLDER= \
     prelink.bat \
-    postlink.bat
+    postlink.bat \
+
+FILE_VIEW_INCLUDES_FOLDER= \
 
 FILE_VIEW_PARAMETER_FOLDER= \
     virtio_blk.bib \
     virtio_blk.reg \
     virtio_blk.dat \
     virtio_blk.db \
-    ProjSysgen.bat
+    ProjSysgen.bat \
+
