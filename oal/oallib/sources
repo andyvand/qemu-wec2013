@@ -24,7 +24,8 @@ INCLUDES=$(_WINCEROOT)\public\common\oak\inc;$(_WINCEROOT)\public\common\sdk\inc
 
 # The list of source files we're going to compile
 SOURCES= \
-    cache.c flush.s \
+    cache.c \
+    flush.s \
     coproc.c \
     cpuspec.c \
     debug.c \
@@ -38,8 +39,12 @@ SOURCES= \
     startup.s \
     timer.c \
     vector.c \
-    rtc.c
+
 
 FILE_VIEW_ROOT_FOLDER= \
     readme.html \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    addrtab_cfg.inc \
+    mmio.h \
 

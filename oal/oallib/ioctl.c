@@ -123,15 +123,11 @@ BOOL OEMIoControl(
 
 	switch (dwIoControlCode)
 	{
-	case IOCTL_HAL_RTC_TIME:
-		OALIoCtlHalRtcTime(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
-		return TRUE;
 	case IOCTL_HAL_RTC_ALARM:
 		OALIoCtlHalRtcAlarm(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
 		return TRUE;
+	case IOCTL_HAL_RTC_TIME:
 	case IOCTL_HAL_INIT_RTC:
-		OALIoCtlHalInitRTC(dwIoControlCode, lpInBuf, nInBufSize, lpOutBuf, nOutBufSize, lpBytesReturned);
-		return TRUE;
 	case IOCTL_HAL_INITREGISTRY:
 	case IOCTL_HAL_POSTINIT:
 	case IOCTL_HAL_ENABLE_WAKE:

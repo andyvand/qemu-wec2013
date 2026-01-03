@@ -21,7 +21,6 @@
 // This function is called by the kernel to retrieve the time from the
 // real-time clock.
 //
-#if 0
 BOOL OEMGetRealTime(LPSYSTEMTIME lpst)
 {
 	DWORD timestamp = mmio_read(RTC_BASE + RTCDR);
@@ -66,9 +65,9 @@ BOOL OEMGetRealTime(LPSYSTEMTIME lpst)
 	lpst->wMonth++;
 	lpst->wDay++;
 
-	lpst->wHour = timestamp / 3600;
-	lpst->wMinute = (timestamp % 3600) / 60;
-	lpst->wSecond = (timestamp % 3600) % 60;
+	lpst->wHour = (WORD)(timestamp / 3600);
+	lpst->wMinute = (WORD)((timestamp % 3600) / 60);
+	lpst->wSecond = (WORD)((timestamp % 3600) % 60);
 
 	//DEBUGMSG(1, (TEXT("OEMGetRealTime %u-%u-%u %u %u:%u:%u\r\n"), lpst->wYear, lpst->wMonth, lpst->wDay, lpst->wDayOfWeek, lpst->wHour, lpst->wMinute, lpst->wSecond));
 
@@ -82,10 +81,50 @@ BOOL OEMGetRealTime(LPSYSTEMTIME lpst)
 //
 BOOL OEMSetRealTime(LPSYSTEMTIME lpst)
 {
-  // Fill in timer code here.
-	DEBUGMSG(1, (TEXT("OEMSetRealTime\r\n")));
+	DWORD days_count[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	DWORD mdays = 0;
+	DWORD isleap = 0;
+	DWORD yearsecs = 0;
+	DWORD curYear = 1970;
+	DWORD curMonth = 1;
+	DWORD timestamp = lpst->wSecond + (lpst->wMinute * 60) + (lpst->wHour  * 3600) + ((lpst->wDay - 1) * 86400);
 
-  return TRUE;
+	while (curYear < lpst->wYear) {
+		isleap = ((curYear % 4) == 0 && ((curYear % 100) != 0 || (curYear % 400) == 0));
+		yearsecs = 86400 * (365 + isleap);
+		timestamp += yearsecs;
+		curYear++;
+		isleap = ((curYear % 4) == 0 && ((curYear % 100) != 0 || (curYear % 400) == 0));
+	}
+
+	while (curMonth < lpst->wMonth) {
+		mdays = days_count[curMonth-1];
+
+		if (lpst->wMonth == 1 && isleap)
+			mdays++;
+
+		timestamp += 86400 * mdays;
+		curMonth++;
+	}
+
+	mmio_write(RTC_BASE + RTCLR, timestamp);
+
+	return TRUE;
+}
+
+static void AlarmIrqEnable(BOOL enabled)
+{
+	ULONG imsc = 0;
+
+	/* Clear any pending alarm interrupts. */
+	mmio_write(RTC_BASE + RTCICR, RTC_BIT_AI);
+
+	imsc = mmio_read(RTC_BASE + RTCIMSC);
+
+	if (enabled == 1)
+		mmio_write(RTC_BASE + RTCIMSC, imsc | RTC_BIT_AI);
+	else
+		mmio_write(RTC_BASE + RTCIMSC, imsc & ~RTC_BIT_AI);
 }
 
 // ---------------------------------------------------------------------------
@@ -95,12 +134,50 @@ BOOL OEMSetRealTime(LPSYSTEMTIME lpst)
 //
 BOOL OEMSetAlarmTime(LPSYSTEMTIME lpst)
 {
-  // Fill in timer code here.
-	DEBUGMSG(1, (TEXT("OEMSetAlarmTime\r\n")));
+	// Fill in timer code here.
+	DWORD days_count[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	DWORD mdays = 0;
+	DWORD isleap = 0;
+	DWORD yearsecs = 0;
+	DWORD curYear = 1970;
+	DWORD curMonth = 1;
+	DWORD timestamp = lpst->wSecond + (lpst->wMinute * 60) + (lpst->wHour * 3600) + ((lpst->wDay - 1) * 86400);
+	DWORD curtimestamp = mmio_read(RTC_BASE + RTCDR);
 
-  return TRUE;
+	while (curYear < lpst->wYear) {
+		isleap = ((curYear % 4) == 0 && ((curYear % 100) != 0 || (curYear % 400) == 0));
+		yearsecs = 86400 * (365 + isleap);
+		timestamp += yearsecs;
+		curYear++;
+		isleap = ((curYear % 4) == 0 && ((curYear % 100) != 0 || (curYear % 400) == 0));
+	}
+
+	while (curMonth < lpst->wMonth) {
+		mdays = days_count[curMonth - 1];
+
+		if (lpst->wMonth == 1 && isleap)
+			mdays++;
+
+		timestamp += 86400 * mdays;
+		curMonth++;
+	}
+
+	if (curtimestamp < timestamp)
+		return FALSE;
+
+	mmio_write(RTC_BASE + RTCMR, timestamp);
+	AlarmIrqEnable(TRUE);
+
+	return TRUE;
 }
-#endif
+
+BOOL OALIoCtlHalRtcAlarm(UINT32 code, VOID *pInBuffer, UINT32 inSize, VOID *pOutBuffer, UINT32 outSize, UINT32 *pOutSize)
+{
+	//  Alarm has been triggered by RTC driver.
+	AlarmIrqEnable(FALSE);
+
+	return TRUE;
+}
 
 // ---------------------------------------------------------------------------
 // OEMQueryPerformanceCounter: OPTIONAL

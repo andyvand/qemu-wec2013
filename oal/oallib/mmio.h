@@ -133,14 +133,16 @@ enum
 {
 	RTC_BASE = 0x91170000,
 
-	RTCDR   = 0x000,
-	RTCMR   = 0x004,
-	RTCLR   = 0x008,
-	RTCCR   = 0x00C,
+	RTCDR = 0x000,
+	RTCMR = 0x004,
+	RTCLR = 0x008,
+	RTCCR = 0x00C,
 	RTCIMSC = 0x010,
-	RTCRIS  = 0x014,
-	RTCMIS  = 0x018,
-	RTCICR  = 0x01C
+	RTCRIS = 0x014,
+	RTCMIS = 0x018,
+	RTCICR = 0x01C,
+	RTC_BIT_AI = (1 << 0), /* Alarm interrupt bit */
+	RTC_BIT_PI = (1 << 1) /* Periodic interrupt bit. ST variants only. */
 };
 
 #define RTC_IRQ 36
