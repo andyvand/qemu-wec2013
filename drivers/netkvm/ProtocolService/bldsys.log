@@ -1,0 +1,477 @@
+BUILD: [Thread:SystemTickCount:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters:
+BUILD: [00:0000000000:PROGC ] Build started in directory: C:\WINCE800\platform\qemu\drivers\netkvm\ProtocolService
+BUILD: [00:0000000000:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, RUN_WPP, XRPACK, PRECOMPHEADER, COMPILE, RENUMBERICONIDS, RES2RES, LIB, EXPLIB, LINK, LOCALIZE, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN, POSTBUILD for ARM.
+BUILD: [00:0000000000:PROGC ] Loading database "C:\wince800\platform\qemu\BuildARMV7retail.dat".
+BUILD: [00:0000000000:PROGC ] Done.
+BUILD: [00:0000000000:PROGC ] Computing include file dependencies:
+BUILD: [01:0000000000:PROGC ] Scan C:\wince800\platform\qemu\drivers\netkvm\protocolservice\
+BUILD: [00:0000001125:PROGC ] Directory scanning complete.
+BUILD: [00:0000001125:PROGC ] Saving C:\wince800\platform\qemu\BuildARMV7retail.dat.
+BUILD: [00:0000001125:PROGC ] Saving Master Database complete.
+BUILD: [00:0000001141:PROGC ] Starting WCEFILES0 Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass WCEFILES0.
+BUILD: [00:0000001172:PROGC ] Starting MIDL Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass MIDL.
+BUILD: [00:0000001172:PROGC ] Starting MC Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass MC.
+BUILD: [00:0000001172:PROGC ] Starting ASN Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass ASN.
+BUILD: [00:0000001172:PROGC ] Starting THUNK Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass THUNK.
+BUILD: [00:0000001172:PROGC ] Starting RUN_WPP Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass RUN_WPP.
+BUILD: [00:0000001172:PROGC ] Starting XRPACK Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass XRPACK.
+BUILD: [00:0000001172:PROGC ] Starting PRECOMPHEADER Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass PRECOMPHEADER.
+BUILD: [00:0000001172:PROGC ] Starting COMPILE Pass.
+BUILD: [00:0000001172:PROGC ] Analyzing project dependency information for pass COMPILE.
+BUILD: [00:0000001235:PROGC ] Building COMPILE Pass in C:\wince800\platform\qemu\drivers\netkvm\protocolservice\ directory.
+BUILD: [01:0000001438:PROGC ] Compiling .\Names.cpp .\ProtocolService.cpp .\Service.cpp .\uninstall.cpp
+BUILD: [01:0000002625:PROGC ] Error(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\protocolservice\".
+BUILD: [01:0000002625:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\names.h(11) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000002641:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2146: syntax error : missing ';' before identifier 'Handle'
+BUILD: [01:0000002641:PROGC ] Warning(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\protocolservice\".
+BUILD: [01:0000002641:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000002704:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(50) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000002719:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002719:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ENUMERATE_SERVICE' : undeclared identifier
+BUILD: [01:0000002719:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ALL_ACCESS' : undeclared identifier
+BUILD: [01:0000002719:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C3861: 'OpenSCManager': identifier not found
+BUILD: [01:0000002719:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(9) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(16) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'SC_HANDLE' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2146: syntax error : missing ';' before identifier 'h'
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C3861: 'CreateService': identifier not found
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(36) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(45) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(181) : error C2061: syntax error : identifier 'PSERVICE_NOTIFY'
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(199) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(200) : error C2146: syntax error : missing ';' before identifier 'm_Status'
+BUILD: [01:0000002735:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(59) : error C2614: 'CService' : illegal member initialization: 'm_Handle' is not a base or member
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(60) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C3861: 'OpenService': identifier not found
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(70) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(77) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(84) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C3861: 'ControlService': identifier not found
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(99) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C3861: 'StartService': identifier not found
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(114) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000002750:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000003469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000003469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C3861: 'QueryServiceStatus': identifier not found
+BUILD: [01:0000003469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(129) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C3861: 'DeleteService': identifier not found
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOP_PENDING' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(161) : error C2065: 'SERVICE_RUNNING' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(183) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'pNotify' : undeclared identifier
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C3861: 'NotifyServiceStatusChange': identifier not found
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(293) : error C2864: 'CServiceImplementation::m_StopEvent' : only static const integral data members can be initialized within a class
+BUILD: [01:0000003485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(307) : error C2146: syntax error : missing ';' before identifier 'hService'
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(308) : error C2146: syntax error : missing ';' before identifier 'status'
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SERVER_HANDLE' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SESSION' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(217) : error C2065: 'WTSSessionId' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C3861: 'WTSQuerySessionInformationA': identifier not found
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(221) : error C3861: 'WTSFreeMemory': identifier not found
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'SERVICE_TABLE_ENTRY' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2061: syntax error : identifier 'SERVICE_TABLE_ENTRY'
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000003516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C3861: 'StartServiceCtrlDispatcher': identifier not found
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2541: 'delete' : cannot delete objects that are not pointers
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2228: left of '.dwControlsAccepted' must have class/struct/union
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_STOP' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_SESSIONCHANGE' : undeclared identifier
+BUILD: [01:0000003532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003547:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2228: left of '.dwWaitHint' must have class/struct/union
+BUILD: [01:0000003547:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003547:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2228: left of '.dwCheckPoint' must have class/struct/union
+BUILD: [01:0000003563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000003563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2228: left of '.dwWin32ExitCode' must have class/struct/union
+BUILD: [01:0000003579:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : fatal error C1003: error count exceeds 100; stopping compilation
+BUILD: [01:0000004204:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\names.h(11) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000004219:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2146: syntax error : missing ';' before identifier 'Handle'
+BUILD: [01:0000004219:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000004235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(50) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000004235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004282:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ENUMERATE_SERVICE' : undeclared identifier
+BUILD: [01:0000004282:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ALL_ACCESS' : undeclared identifier
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C3861: 'OpenSCManager': identifier not found
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(9) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(16) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'SC_HANDLE' : undeclared identifier
+BUILD: [01:0000004297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2146: syntax error : missing ';' before identifier 'h'
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C3861: 'CreateService': identifier not found
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(36) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(45) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000004313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(181) : error C2061: syntax error : identifier 'PSERVICE_NOTIFY'
+BUILD: [01:0000004329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(199) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000004344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(200) : error C2146: syntax error : missing ';' before identifier 'm_Status'
+BUILD: [01:0000004344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(59) : error C2614: 'CService' : illegal member initialization: 'm_Handle' is not a base or member
+BUILD: [01:0000004344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(60) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000004344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000004375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C3861: 'OpenService': identifier not found
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(70) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(77) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(84) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000004391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C3861: 'ControlService': identifier not found
+BUILD: [01:0000004407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(99) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C3861: 'StartService': identifier not found
+BUILD: [01:0000004407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(114) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000004422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C3861: 'QueryServiceStatus': identifier not found
+BUILD: [01:0000004422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000004422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000004422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(129) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C3861: 'DeleteService': identifier not found
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOP_PENDING' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(161) : error C2065: 'SERVICE_RUNNING' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(183) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004454:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000004469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000004469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000004485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'pNotify' : undeclared identifier
+BUILD: [01:0000004485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C3861: 'NotifyServiceStatusChange': identifier not found
+BUILD: [01:0000004485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(293) : error C2864: 'CServiceImplementation::m_StopEvent' : only static const integral data members can be initialized within a class
+BUILD: [01:0000004485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(307) : error C2146: syntax error : missing ';' before identifier 'hService'
+BUILD: [01:0000004485:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(308) : error C2146: syntax error : missing ';' before identifier 'status'
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SERVER_HANDLE' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SESSION' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(217) : error C2065: 'WTSSessionId' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C3861: 'WTSQuerySessionInformationA': identifier not found
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(221) : error C3861: 'WTSFreeMemory': identifier not found
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'SERVICE_TABLE_ENTRY' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2061: syntax error : identifier 'SERVICE_TABLE_ENTRY'
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000004500:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000004516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000004516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004516:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C3861: 'StartServiceCtrlDispatcher': identifier not found
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2541: 'delete' : cannot delete objects that are not pointers
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2228: left of '.dwControlsAccepted' must have class/struct/union
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_STOP' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_SESSIONCHANGE' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004532:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2228: left of '.dwWaitHint' must have class/struct/union
+BUILD: [01:0000004594:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004594:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2228: left of '.dwCheckPoint' must have class/struct/union
+BUILD: [01:0000004594:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000004594:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2228: left of '.dwWin32ExitCode' must have class/struct/union
+BUILD: [01:0000004594:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : fatal error C1003: error count exceeds 100; stopping compilation
+BUILD: [01:0000005219:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\names.h(11) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000005219:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2146: syntax error : missing ';' before identifier 'Handle'
+BUILD: [01:0000005219:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000005219:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(50) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000005219:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ENUMERATE_SERVICE' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ALL_ACCESS' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C3861: 'OpenSCManager': identifier not found
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(9) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(16) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'SC_HANDLE' : undeclared identifier
+BUILD: [01:0000005235:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2146: syntax error : missing ';' before identifier 'h'
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C3861: 'CreateService': identifier not found
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(36) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(45) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(181) : error C2061: syntax error : identifier 'PSERVICE_NOTIFY'
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(199) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(200) : error C2146: syntax error : missing ';' before identifier 'm_Status'
+BUILD: [01:0000005250:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(59) : error C2614: 'CService' : illegal member initialization: 'm_Handle' is not a base or member
+BUILD: [01:0000005266:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(60) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000005266:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000005266:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000005266:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005297:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C3861: 'OpenService': identifier not found
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(70) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(77) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(84) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005313:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C3861: 'ControlService': identifier not found
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(99) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C3861: 'StartService': identifier not found
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(114) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C3861: 'QueryServiceStatus': identifier not found
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005329:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(129) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C3861: 'DeleteService': identifier not found
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOP_PENDING' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(161) : error C2065: 'SERVICE_RUNNING' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(183) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'pNotify' : undeclared identifier
+BUILD: [01:0000005344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C3861: 'NotifyServiceStatusChange': identifier not found
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(293) : error C2864: 'CServiceImplementation::m_StopEvent' : only static const integral data members can be initialized within a class
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(307) : error C2146: syntax error : missing ';' before identifier 'hService'
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(308) : error C2146: syntax error : missing ';' before identifier 'status'
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SERVER_HANDLE' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SESSION' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(217) : error C2065: 'WTSSessionId' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C3861: 'WTSQuerySessionInformationA': identifier not found
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(221) : error C3861: 'WTSFreeMemory': identifier not found
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'SERVICE_TABLE_ENTRY' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2061: syntax error : identifier 'SERVICE_TABLE_ENTRY'
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000005360:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005375:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C3861: 'StartServiceCtrlDispatcher': identifier not found
+BUILD: [01:0000005391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000005391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2541: 'delete' : cannot delete objects that are not pointers
+BUILD: [01:0000005391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000005391:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2228: left of '.dwControlsAccepted' must have class/struct/union
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_STOP' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_SESSIONCHANGE' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2228: left of '.dwWaitHint' must have class/struct/union
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2228: left of '.dwCheckPoint' must have class/struct/union
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2228: left of '.dwWin32ExitCode' must have class/struct/union
+BUILD: [01:0000005407:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : fatal error C1003: error count exceeds 100; stopping compilation
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\names.h(11) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2146: syntax error : missing ';' before identifier 'Handle'
+BUILD: [01:0000005875:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(50) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ENUMERATE_SERVICE' : undeclared identifier
+BUILD: [01:0000005875:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C2065: 'SC_MANAGER_ALL_ACCESS' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(8) : error C3861: 'OpenSCManager': identifier not found
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(9) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(16) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(18) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'SC_HANDLE' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2146: syntax error : missing ';' before identifier 'h'
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005891:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(26) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(25) : error C3861: 'CreateService': identifier not found
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(36) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(39) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(45) : error C2065: 'h' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(181) : error C2061: syntax error : identifier 'PSERVICE_NOTIFY'
+BUILD: [01:0000005907:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(199) : error C2146: syntax error : missing ';' before identifier 'm_Handle'
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(200) : error C2146: syntax error : missing ';' before identifier 'm_Status'
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(59) : error C2614: 'CService' : illegal member initialization: 'm_Handle' is not a base or member
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(60) : error C2065: 'SERVICE_QUERY_STATUS' : undeclared identifier
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_STOP' : undeclared identifier
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(63) : error C2065: 'SERVICE_START' : undeclared identifier
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(67) : error C3861: 'OpenService': identifier not found
+BUILD: [01:0000005922:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(70) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(77) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(79) : error C3861: 'CloseServiceHandle': identifier not found
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(84) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'SERVICE_CONTROL_STOP' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(88) : error C3861: 'ControlService': identifier not found
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(99) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(103) : error C3861: 'StartService': identifier not found
+BUILD: [01:0000005938:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(114) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(118) : error C3861: 'QueryServiceStatus': identifier not found
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(122) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(129) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005954:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(133) : error C3861: 'DeleteService': identifier not found
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(152) : error C2065: 'SERVICE_STOP_PENDING' : undeclared identifier
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(161) : error C2065: 'SERVICE_RUNNING' : undeclared identifier
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(183) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2065: 'm_Status' : undeclared identifier
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(187) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'm_Handle' : undeclared identifier
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C2065: 'pNotify' : undeclared identifier
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(192) : error C3861: 'NotifyServiceStatusChange': identifier not found
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(293) : error C2864: 'CServiceImplementation::m_StopEvent' : only static const integral data members can be initialized within a class
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(307) : error C2146: syntax error : missing ';' before identifier 'hService'
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(308) : error C2146: syntax error : missing ';' before identifier 'status'
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SERVER_HANDLE' : undeclared identifier
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C2065: 'WTS_CURRENT_SESSION' : undeclared identifier
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(217) : error C2065: 'WTSSessionId' : undeclared identifier
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(216) : error C3861: 'WTSQuerySessionInformationA': identifier not found
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(221) : error C3861: 'WTSFreeMemory': identifier not found
+BUILD: [01:0000005985:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'SERVICE_TABLE_ENTRY' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(225) : error C2061: syntax error : identifier 'SERVICE_TABLE_ENTRY'
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(226) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(227) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(231) : error C2228: left of '.lpServiceName' must have class/struct/union
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(232) : error C2228: left of '.lpServiceProc' must have class/struct/union
+BUILD: [01:0000006000:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006016:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(253) : error C3861: 'StartServiceCtrlDispatcher': identifier not found
+BUILD: [01:0000006016:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2065: 'table' : undeclared identifier
+BUILD: [01:0000006016:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(254) : error C2541: 'delete' : cannot delete objects that are not pointers
+BUILD: [01:0000006032:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006032:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(299) : error C2228: left of '.dwServiceType' must have class/struct/union
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2228: left of '.dwCurrentState' must have class/struct/union
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(300) : error C2065: 'SERVICE_STOPPED' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2228: left of '.dwControlsAccepted' must have class/struct/union
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_STOP' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(301) : error C2065: 'SERVICE_ACCEPT_SESSIONCHANGE' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(302) : error C2228: left of '.dwWaitHint' must have class/struct/union
+BUILD: [01:0000006063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(303) : error C2228: left of '.dwCheckPoint' must have class/struct/union
+BUILD: [01:0000006063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2065: 'status' : undeclared identifier
+BUILD: [01:0000006063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : error C2228: left of '.dwWin32ExitCode' must have class/struct/union
+BUILD: [01:0000006063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(304) : fatal error C1003: error count exceeds 100; stopping compilation
+BUILD: [01:0000006094:ERRORE] NMAKE : fatal error U1077: 'C:\WINCE800\sdk\bin\i386\ARM\cl.exe' : return code '0x2'
+BUILD: [01:0000006110:ERRORE] TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1 failed - rc = 2.
+BUILD: [00:0000006110:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000006110:PROGC ] Midl                       0         0       0
+BUILD: [00:0000006110:PROGC ] Message                    0         0       0
+BUILD: [00:0000006125:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000006125:PROGC ] Resource                   0         0       0
+BUILD: [00:0000006125:PROGC ] XRPack                     0         0       0
+BUILD: [00:0000006125:PROGC ] MASM                       0         0       0
+BUILD: [00:0000006125:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000006125:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000006125:PROGC ] C++                        0         4     409
+BUILD: [00:0000006125:PROGC ] C                          0         0       0
+BUILD: [00:0000006125:PROGC ] CheckLibs                  0         0       0
+BUILD: [00:0000006125:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000006125:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000006125:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000006125:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000006125:PROGC ] Resx                       0         0       0
+BUILD: [00:0000006125:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000006125:PROGC ] VCProj Compile             0         0       0
+BUILD: [00:0000006125:PROGC ] NETCF Build                0         0       0
+BUILD: [00:0000006125:PROGC ] Localization               0         0       0
+BUILD: [00:0000006125:PROGC ] Other                      0         0       1
+BUILD: [00:0000006125:PROGC ] 
+BUILD: [00:0000006125:PROGC ] Total                      0         4     410
+BUILD: [00:0000006125:PROGC ] 
+BUILD: [00:0000006125:PROGC ] 4 Warnings,  410 Errors
+BUILD: [00:0000006141:PROGC ] GetSystemTimes (seconds): Idle: 2     Kernel: 6     User: 5    
+BUILD: [00:0000006141:PROGC ] Elapsed  time  (seconds): 6    
+Build for Windows CE (Release 800) (Built on Apr  2 2013 01:37:43)
+File names: Build.log Build.wrn Build.err BuildARMV7retail.dat

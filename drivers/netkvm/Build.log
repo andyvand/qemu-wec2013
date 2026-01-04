@@ -1,0 +1,734 @@
+BUILD: [Thread:SystemTickCount:Type  ] Message
+BUILD: [00:0000000000:PROGC ] Build started with parameters:
+BUILD: [00:0000000000:PROGC ] Build started in directory: C:\WINCE800\platform\qemu\drivers\netkvm
+BUILD: [00:0000000000:PROG  ] Environment: ALLUSERSPROFILE=C:\ProgramData
+BUILD: [00:0000000000:PROG  ] Environment: APPDATA=C:\Users\andyv\AppData\Roaming
+BUILD: [00:0000000000:PROG  ] Environment: BSP_DISPLAY_HFLAT=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_BLDR=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_BOOT=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_KITL=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_LAN9118=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_NETKVM=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_OAL=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_PL011=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_PL041=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_PL050=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_VIRTIO=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_VIRTIOBLK=1
+BUILD: [00:0000000000:PROG  ] Environment: BSP_QEMU_VIRTIOTABLET=1
+BUILD: [00:0000000000:PROG  ] Environment: BUILD_DEFAULT=-nmake -nologo
+BUILD: [00:0000000000:PROG  ] Environment: BUILD_MULTIPROCESSOR=0
+BUILD: [00:0000000000:PROG  ] Environment: CEBASE=1
+BUILD: [00:0000000000:PROG  ] Environment: CommonProgramFiles=C:\Program Files (x86)\Common Files
+BUILD: [00:0000000000:PROG  ] Environment: CommonProgramFiles(Arm)=C:\Program Files (Arm)\Common Files
+BUILD: [00:0000000000:PROG  ] Environment: CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+BUILD: [00:0000000000:PROG  ] Environment: CommonProgramW6432=C:\Program Files\Common Files
+BUILD: [00:0000000000:PROG  ] Environment: COMPUTERNAME=ANDY_VM
+BUILD: [00:0000000000:PROG  ] Environment: ComSpec=C:\WINDOWS\system32\cmd.exe
+BUILD: [00:0000000000:PROG  ] Environment: COPYCMD=/y
+BUILD: [00:0000000000:PROG  ] Environment: DEFAULT_LOCALE=en-US
+BUILD: [00:0000000000:PROG  ] Environment: DriverData=C:\Windows\System32\Drivers\DriverData
+BUILD: [00:0000000000:PROG  ] Environment: EFC_5160_1592913036=1
+BUILD: [00:0000000000:PROG  ] Environment: FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+BUILD: [00:0000000000:PROG  ] Environment: FPS_BROWSER_USER_PROFILE_STRING=Default
+BUILD: [00:0000000000:PROG  ] Environment: HOMEDRIVE=C:
+BUILD: [00:0000000000:PROG  ] Environment: HOMEPATH=\Users\andyv
+BUILD: [00:0000000000:PROG  ] Environment: IMGEBOOT=1
+BUILD: [00:0000000000:PROG  ] Environment: IMGNODEBUGGER=1
+BUILD: [00:0000000000:PROG  ] Environment: IMGNOKITL=1
+BUILD: [00:0000000000:PROG  ] Environment: LOCALAPPDATA=C:\Users\andyv\AppData\Local
+BUILD: [00:0000000000:PROG  ] Environment: LOCALE=0409
+BUILD: [00:0000000000:PROG  ] Environment: LOGONSERVER=\\ANDY_VM
+BUILD: [00:0000000000:PROG  ] Environment: MSBuildLoadMicrosoftTargetsReadOnly=true
+BUILD: [00:0000000000:PROG  ] Environment: NUMBER_OF_PROCESSORS=2
+BUILD: [00:0000000000:PROG  ] Environment: OneDrive=C:\Users\andyv\OneDrive
+BUILD: [00:0000000000:PROG  ] Environment: OneDriveConsumer=C:\Users\andyv\OneDrive
+BUILD: [00:0000000000:PROG  ] Environment: OS=Windows_NT
+BUILD: [00:0000000000:PROG  ] Environment: Path=C:\WINCE800\sdk\bin\i386\ARM;C:\WINCE800\sdk\bin\i386;C:\WINCE800\sdk\bin\i386\ARM;C:\WINCE800\public\common\oak\Bin\i386;C:\WINCE800\private\bin\i386;C:\WINCE800\private\bat;C:\WINCE800\public\common\oak\misc;C:\WINCE800\developr\andyv;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\andyv\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Microsoft Platform Builder\8.00\cepb\ideVS
+BUILD: [00:0000000016:PROG  ] Environment: PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+BUILD: [00:0000000016:PROG  ] Environment: PBCONFIG=QEMU_ARMV7 Release
+BUILD: [00:0000000016:PROG  ] Environment: PBCONFIGTAG=C56D0BA2
+BUILD: [00:0000000016:PROG  ] Environment: PBWORKSPACE=C:\WINCE800\OSDESI~1\QEMU\QEMU\QEMU~1.PBX
+BUILD: [00:0000000016:PROG  ] Environment: PBWORKSPACEROOT=C:\WINCE800\OSDesigns\QEMU\QEMU
+BUILD: [00:0000000016:PROG  ] Environment: PkgDefApplicationConfigFile=C:\Users\andyv\AppData\Local\Microsoft\VisualStudio\12.0\devenv.exe.config
+BUILD: [00:0000000016:PROG  ] Environment: PROCESSOR_ARCHITECTURE=x86
+BUILD: [00:0000000016:PROG  ] Environment: PROCESSOR_ARCHITEW6432=ARM64
+BUILD: [00:0000000016:PROG  ] Environment: PROCESSOR_IDENTIFIER=ARMv8 (64-bit) Family 8 Model 0 Revision   0, Apple
+BUILD: [00:0000000016:PROG  ] Environment: PROCESSOR_LEVEL=0
+BUILD: [00:0000000016:PROG  ] Environment: PROCESSOR_REVISION=0000
+BUILD: [00:0000000016:PROG  ] Environment: ProgramData=C:\ProgramData
+BUILD: [00:0000000016:PROG  ] Environment: ProgramFiles=C:\Program Files (x86)
+BUILD: [00:0000000016:PROG  ] Environment: ProgramFiles(Arm)=C:\Program Files (Arm)
+BUILD: [00:0000000016:PROG  ] Environment: ProgramFiles(x86)=C:\Program Files (x86)
+BUILD: [00:0000000016:PROG  ] Environment: ProgramW6432=C:\Program Files
+BUILD: [00:0000000016:PROG  ] Environment: PROMPT=$P$G
+BUILD: [00:0000000016:PROG  ] Environment: PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+BUILD: [00:0000000016:PROG  ] Environment: PUBLIC=C:\Users\Public
+BUILD: [00:0000000016:PROG  ] Environment: SESSIONNAME=Console
+BUILD: [00:0000000016:PROG  ] Environment: SG_OUTPUT_ROOT=C:\WINCE800\OSDesigns\QEMU\QEMU\Wince800\qemu_ARMV7_Retail\cesysgen
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_ACCESSIB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_ATL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_AUDIO=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_AUTH=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_AUTH_KERBEROS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_AUTH_NTLM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_AUTH_SCHANNEL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_BINFS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_BRIDGE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CACHEFILT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CERTS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CMD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CNG_CORE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CNG_KEYS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_COMMCTRL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_COMMDLG=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CONNMC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CONNMGR2=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CONSOLE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CREDMAN=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CRYPTO=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CRYPTO_DSSDH=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CTLPNL2=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_CURSOR=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DATETIMECPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DCOM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DDRAW=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DISPLAYCPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DNSAPI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_AVI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_CAPTURE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_HTTPSTREAMER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_ICM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_IMAGEDECODER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_LOCALSTREAMER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MP3=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MP4DEMUX=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MPEG2DEMUX=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MPEGA=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MPEGSPLITTER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MPEGV=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_MSRLE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_VMR=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_WMA=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_WMA_VOICE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_DSHOW_WMT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_EAP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_EAPHOST=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_ETHERNETCPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_ETH_USB_HOST=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FATFS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FATUTIL_NOUI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FIREWALL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_ARIAL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_ARIALBD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_ARIALBI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_ARIALI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_ARIBLK=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COMIC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COMICBD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COUR=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COURBD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COURBI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_COURI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_GEORGIA=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_GEORGIAB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_GEORGIAI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_GEORGIAZ=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_MICROSS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SEGOEUIB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SEGOEUII=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SEGOEUIL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SEGOEUIZ=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SEGUISB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_SYMBOL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TAHOMA=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TAHOMABD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TIMES=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TIMESBD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TIMESBI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TIMESI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TREBUC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TREBUCBD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TREBUCBI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_TREBUCIT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_VERDANA=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_VERDANAB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_VERDANAI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_VERDANAZ=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_WEBDINGS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FONTS_WINGDING=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FSDBASE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FSPASSWORD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_FSRAMROM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_GATEWAY=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_GATEWAY_LOGGING=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_GDI_FONTFIX=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_GDI_RASTERFONT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_GESTUREANIMATION=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_HELP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_IMM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_INPUTCPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_IPSEC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_JSCRIPT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_LAP_PSWD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_LARGEKB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_LASS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_LLTD_RESPONDER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_LOCALAUDIO=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MENU_OVERLAP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MENU_TAP_UI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MFC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MINGDI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MINGWES=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MININPUT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MINSHELL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MINWMGR=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MSHTML=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MSIM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MSMQ=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MSMQ_SRMP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MSXML=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MULTIMON=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_MULTIUI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NDISUIO=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NETAPI32=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NETLOG=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NETUTILS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NETWORKING=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NET_WFP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_NOTIFY=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_OLE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_PDFVIEWER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_PHYSICSENGINE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_PM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_REDIR=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_REGIONALCPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_RELFSD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_SECURE_DDNS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_SHELL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_SHELLAPI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_SNDSCHEMECPL=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_SOFTKB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_STREAMAUDIO=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_STREAMAV=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_TOOLHELP=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_TOUCH=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_TOUCHGESTURE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_UDFS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_UIPROXY=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_UNISCRIBE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USBFN=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_HID=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_HID_CLIENTS=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_HID_KEYBOARD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_HID_MOUSE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_PRINTER=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_USB_STORAGE=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_VBSCRIPT=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_VIEWERSDEFAULTUI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_WCELOAD=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_WGI_WIC=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_WININET=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_WSDAPI=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_WSDAPI_SAMPLES=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_XAMLIM=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_XAMLMSGBOX=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_XAML_RUNTIME=1
+BUILD: [00:0000000016:PROG  ] Environment: SYSGEN_XMLLITE=1
+BUILD: [00:0000000016:PROG  ] Environment: SystemDrive=C:
+BUILD: [00:0000000016:PROG  ] Environment: SystemRoot=C:\WINDOWS
+BUILD: [00:0000000016:PROG  ] Environment: TEMP=C:\Users\andyv\AppData\Local\Temp\bld_107642
+BUILD: [00:0000000016:PROG  ] Environment: TMP=C:\Users\andyv\AppData\Local\Temp\bld_107642
+BUILD: [00:0000000016:PROG  ] Environment: USERDOMAIN=ANDY_VM
+BUILD: [00:0000000016:PROG  ] Environment: USERDOMAIN_ROAMINGPROFILE=ANDY_VM
+BUILD: [00:0000000016:PROG  ] Environment: USERNAME=andyv
+BUILD: [00:0000000016:PROG  ] Environment: USERPROFILE=C:\Users\andyv
+BUILD: [00:0000000016:PROG  ] Environment: USING_PB_WORKSPACE_ENVIRONMENT=1
+BUILD: [00:0000000016:PROG  ] Environment: VisualStudioDir=C:\Users\andyv\Documents\Visual Studio 2013
+BUILD: [00:0000000016:PROG  ] Environment: VisualStudioEdition=Microsoft Visual Studio Professional 2013
+BUILD: [00:0000000016:PROG  ] Environment: VisualStudioVersion=12.0
+BUILD: [00:0000000016:PROG  ] Environment: VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
+BUILD: [00:0000000016:PROG  ] Environment: VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\
+BUILD: [00:0000000016:PROG  ] Environment: VSLANG=1033
+BUILD: [00:0000000016:PROG  ] Environment: WINCEDEBUG=retail
+BUILD: [00:0000000016:PROG  ] Environment: WINCEMAP=1
+BUILD: [00:0000000016:PROG  ] Environment: WINCEREL=1
+BUILD: [00:0000000016:PROG  ] Environment: windir=C:\WINDOWS
+BUILD: [00:0000000016:PROG  ] Environment: _BUILDOUTPUTFILTER_RUNNING=1
+BUILD: [00:0000000016:PROG  ] Environment: _DEPTREES=winceos dcom wgi html netcf servers cellcore ossvcs shell directx ostest viewers CEBASE
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET20ROOT=C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET20SP2INSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET30ROOT=C:\WINDOWS\Microsoft.NET\Framework\v3.0
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET30SP2INSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET35ROOT=C:\WINDOWS\Microsoft.NET\Framework\v3.5
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET35SP1INSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET40CLIENTINSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET40FULLINSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET40ROOT=C:\Windows\Microsoft.NET\Framework\v4.0.30319
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNET45INSTALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _DOTNETSDKROOT=C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+BUILD: [00:0000000016:PROG  ] Environment: _FLATRELEASEDIR=C:\WINCE800\OSDesigns\QEMU\QEMU\RelDir\QEMU_ARMV7_Release
+BUILD: [00:0000000016:PROG  ] Environment: _HOSTCPUTYPE=i386
+BUILD: [00:0000000016:PROG  ] Environment: _MAJORVERSION=8
+BUILD: [00:0000000016:PROG  ] Environment: _MAKEENVROOT=C:\WINCE800\public\common\oak\misc
+BUILD: [00:0000000016:PROG  ] Environment: _MINORVERSION=00
+BUILD: [00:0000000016:PROG  ] Environment: _OSDESIGNDDKROOT=C:\WINCE800\OSDesigns\QEMU\QEMU\Wince800\qemu_ARMV7_Retail\ddk
+BUILD: [00:0000000016:PROG  ] Environment: _OSDESIGNOAKROOT=C:\WINCE800\OSDesigns\QEMU\QEMU\Wince800\qemu_ARMV7_Retail\oak
+BUILD: [00:0000000016:PROG  ] Environment: _OSDESIGNROOT=C:\WINCE800\OSDesigns\QEMU\QEMU
+BUILD: [00:0000000016:PROG  ] Environment: _OSDESIGNSDKROOT=C:\WINCE800\OSDesigns\QEMU\QEMU\Wince800\qemu_ARMV7_Retail\sdk
+BUILD: [00:0000000016:PROG  ] Environment: _PB_INSTALL_ROOT=C:\PROGRA~2\MIFAB2~1\8.00
+BUILD: [00:0000000016:PROG  ] Environment: _PLATFORMDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _PLATFORMROOT=C:\WINCE800\platform
+BUILD: [00:0000000016:PROG  ] Environment: _PREWINCEPATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\andyv\AppData\Local\Microsoft\WindowsApps;
+BUILD: [00:0000000016:PROG  ] Environment: _PRIVATEDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _PRIVATEROOT=C:\WINCE800\private
+BUILD: [00:0000000016:PROG  ] Environment: _PROJECTDDKROOT=C:\WINCE800\public\CEBASE\ddk
+BUILD: [00:0000000016:PROG  ] Environment: _PROJECTOAKROOT=C:\WINCE800\public\CEBASE\oak
+BUILD: [00:0000000016:PROG  ] Environment: _PROJECTROOT=C:\WINCE800\public\CEBASE
+BUILD: [00:0000000016:PROG  ] Environment: _PROJECTSDKROOT=C:\WINCE800\public\CEBASE\sdk
+BUILD: [00:0000000016:PROG  ] Environment: _PROJPUBLICROOT=C:\WINCE800\OSDesigns\QEMU\QEMU\WINCE800\PUBLIC
+BUILD: [00:0000000016:PROG  ] Environment: _PUBLICDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _PUBLICROOT=C:\WINCE800\public
+BUILD: [00:0000000016:PROG  ] Environment: _SDKDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _SDKROOT=C:\WINCE800\sdk
+BUILD: [00:0000000016:PROG  ] Environment: _TARGETPLATROOT=C:\WINCE800\platform\qemu
+BUILD: [00:0000000016:PROG  ] Environment: _TGTCPU=ARMV7
+BUILD: [00:0000000016:PROG  ] Environment: _TGTCPUFAMILY=ARM
+BUILD: [00:0000000016:PROG  ] Environment: _TGTCPUISA=V7
+BUILD: [00:0000000016:PROG  ] Environment: _TGTOS=CE
+BUILD: [00:0000000016:PROG  ] Environment: _TGTPLAT=qemu
+BUILD: [00:0000000016:PROG  ] Environment: _TGTPROJ=CEBASE
+BUILD: [00:0000000016:PROG  ] Environment: _TOOLSSDKDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _TOOLSSDKROOT=C:\WINCE800\tools\public\ext
+BUILD: [00:0000000016:PROG  ] Environment: _WINCECALLED=1
+BUILD: [00:0000000016:PROG  ] Environment: _WINCEDRIVE=C:
+BUILD: [00:0000000016:PROG  ] Environment: _WINCEOSVER=800
+BUILD: [00:0000000016:PROG  ] Environment: _WINCEROOT=C:\WINCE800
+BUILD: [00:0000000016:PROGC ] Running passes WCEFILES0, MIDL, MC, ASN, THUNK, RUN_WPP, XRPACK, PRECOMPHEADER, COMPILE, RENUMBERICONIDS, RES2RES, LIB, EXPLIB, LINK, LOCALIZE, MANAGEDRESX, MANAGEDMOD, MANAGEDDLL, MANAGEDEXE, MANAGEDWIN, POSTBUILD for ARM.
+BUILD: [00:0000000016:PROGC ] Loading database "C:\wince800\platform\qemu\BuildARMV7retail.dat".
+BUILD: [00:0000000016:PROGC ] Done.
+BUILD: [00:0000000016:PROGC ] Computing include file dependencies:
+BUILD: [01:0000000188:PROGC ] Scan C:\wince800\platform\qemu\drivers\netkvm\notifyobject\
+BUILD: [02:0000000188:PROGC ] Scan C:\wince800\platform\qemu\drivers\netkvm\common\
+BUILD: [00:0000000578:PROG  ] Waiting for 2 worker threads.
+BUILD: [02:0000000578:PROGC ] Scan C:\wince800\platform\qemu\drivers\netkvm\wlh\
+BUILD: [00:0000004532:PROGC ] Directory scanning complete.
+BUILD: [00:0000004532:PROGC ] Saving C:\wince800\platform\qemu\BuildARMV7retail.dat.
+BUILD: [00:0000004563:INFO  ] Done.
+BUILD: [00:0000004563:PROGC ] Saving Master Database complete.
+BUILD: [00:0000004563:PROGC ] Starting WCEFILES0 Pass.
+BUILD: [00:0000004563:PROGC ] Analyzing project dependency information for pass WCEFILES0.
+BUILD: [00:0000004563:PROGC ] Starting MIDL Pass.
+BUILD: [00:0000004563:PROGC ] Analyzing project dependency information for pass MIDL.
+BUILD: [00:0000004563:INFO  ] C:\wince800\platform\qemu\drivers\netkvm\notifyobject\: Missing source file: netcfgxce.acf.
+BUILD: [00:0000004563:INFO  ] C:\wince800\platform\qemu\drivers\netkvm\notifyobject\: Missing source file: netkvmnoif.acf.
+BUILD: [00:0000004578:PROGC ] Starting MC Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass MC.
+BUILD: [00:0000004578:PROGC ] Starting ASN Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass ASN.
+BUILD: [00:0000004578:PROGC ] Starting THUNK Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass THUNK.
+BUILD: [00:0000004578:PROGC ] Starting RUN_WPP Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass RUN_WPP.
+BUILD: [00:0000004578:PROGC ] Starting XRPACK Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass XRPACK.
+BUILD: [00:0000004578:PROGC ] Starting PRECOMPHEADER Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass PRECOMPHEADER.
+BUILD: [00:0000004578:PROGC ] Starting COMPILE Pass.
+BUILD: [00:0000004578:PROGC ] Analyzing project dependency information for pass COMPILE.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_AbstractPath.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_AbstractPath.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_Common.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_Common.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_CX.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_CX.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_Debug.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_Debug.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_GuestAnnounce.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_GuestAnnounce.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_Oid.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_Oid.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_Protocol.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_Protocol.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_RX.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_RX.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_TX.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_TX.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_Util.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_Util.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_VirtIO.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_VirtIO.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\ParaNdis_VirtQueue.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\ParaNdis_VirtQueue.obj is missing.
+BUILD: [00:0000004657:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\common\sw_offload.cpp because target: C:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\sw_offload.obj is missing.
+BUILD: [00:0000004657:PROGC ] Building COMPILE Pass in C:\wince800\platform\qemu\drivers\netkvm\common\ directory.
+BUILD: [00:0000004672:PROG  ] 'NMAKE.EXE TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000004688:PROGC ] Warning(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\wlh\".
+BUILD: [00:0000004688:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: lan9118.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: os.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: smsc9118.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: platform.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: util.S.
+BUILD: [00:0000004703:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\wlh\lan9118.c because filename is missing from build database
+BUILD: [00:0000004703:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\wlh\os.c because filename is missing from build database
+BUILD: [00:0000004703:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\wlh\smsc9118.c because filename is missing from build database
+BUILD: [00:0000004703:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\wlh\platform.c because filename is missing from build database
+BUILD: [00:0000004703:INFO  ] Will Build C:\wince800\platform\qemu\drivers\netkvm\wlh\util.S because filename is missing from build database
+BUILD: [00:0000004719:PROGC ] Building COMPILE Pass in C:\wince800\platform\qemu\drivers\netkvm\wlh\ directory.
+BUILD: [00:0000004719:PROG  ] 'NMAKE.EXE TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1' (SYNCHRONIZE_BLOCK = 0)
+BUILD: [00:0000004750:PROG  ] Waiting for 2 worker threads.
+BUILD: [02:0000004844:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\Sources.default
+BUILD: [02:0000004844:INFO  ] makefile.def: BUILDROOT is C:\WINCE800\platform\qemu
+BUILD: [02:0000004844:INFO  ] makefile.def: Including C:\WINCE800\platform\qemu\sources.cmn
+BUILD: [01:0000004891:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\Sources.default
+BUILD: [01:0000004891:INFO  ] makefile.def: BUILDROOT is C:\WINCE800\platform\qemu
+BUILD: [01:0000004891:INFO  ] makefile.def: Including C:\WINCE800\platform\qemu\sources.cmn
+BUILD: [02:0000004922:INFO  ] makefile.def: Including C:\wince800\platform\qemu\drivers\netkvm\wlh\sources
+BUILD: [02:0000004922:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\Sources.CE
+BUILD: [02:0000004922:INFO  ] Directory: C:\wince800\platform\qemu\drivers\netkvm\wlh
+BUILD: [02:0000004922:INFO  ] TARGETNAME: smsc9118
+BUILD: [02:0000004922:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [01:0000004938:INFO  ] makefile.def: Including C:\wince800\platform\qemu\drivers\netkvm\common\sources
+BUILD: [01:0000004938:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\Sources.CE
+BUILD: [01:0000004938:INFO  ] Directory: C:\wince800\platform\qemu\drivers\netkvm\common
+BUILD: [01:0000004938:INFO  ] TARGETNAME: netkvmcommon
+BUILD: [01:0000004938:INFO  ] makefile.def: Including C:\WINCE800\public\common\oak\misc\sources.ReleaseType_PLATFORM
+BUILD: [02:0000004953:PROGC ] Error(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\wlh\".
+BUILD: [02:0000004953:ERRORE] NMAKE : fatal error U1073: don't know how to make 'C:\wince800\platform\qemu\drivers\netkvm\wlh\obj\ARMV7\retail\lan9118.obj'
+BUILD: [02:0000004953:INFO  ] Stop.
+BUILD: [02:0000004969:ERRORE] TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1 failed - rc = 2.
+BUILD: [01:0000005032:PROGC ] Compiling .\ParaNdis_AbstractPath.cpp .\ParaNdis_Common.cpp .\ParaNdis_CX.cpp .\ParaNdis_Debug.cpp .\ParaNdis_GuestAnnounce.cpp .\ParaNdis_Oid.cpp .\ParaNdis_Protocol.cpp .\ParaNdis_RX.cpp .\ParaNdis_TX.cpp .\ParaNdis_Util.cpp .\ParaNdis_VirtIO.cpp .\ParaNdis_VirtQueue.cpp .\sw_offload.cpp
+BUILD: [01:0000005125:INFO  ] cl.exe -nologo   -FoC:\wince800\platform\qemu\drivers\netkvm\common\obj\ARMV7\retail\  /Gy -QRimplicit-import- /QRunaligned- -c -I. -IC:\WINCE800\public\common\oak\inc -IC:\WINCE800\public\common\sdk\inc -IC:\WINCE800\public\common\ddk\inc -I..\..\virtio -I.. -I..\wlh -IC:\WINCE800\public\common\sdk\inc -IC:\WINCE800\public\common\oak\inc -IC:\WINCE800\public\common\ddk\inc -IC:\WINCE800\public\common\sdk\inc\cestl -IC:\WINCE800\public\common\sdk\inc\crt -I.\Resource\0409 -Ox -Os -Oy- -GF -Zi -FdC:\WINCE800\OSDesigns\QEMU\QEMU\Wince800\qemu_ARMV7_Retail\cesysgen\platform\qemu\lib\ARMV7\retail\netkvmcommon.pdb -DTHUMBSUPPORT -D_CRT_SECURE_NO_DEPRECATE -D_USE_32BIT_TIME_T -DUNICODE -D_UNICODE -DUNDER_CE=800 -D_WIN32_WCE=0x0800 -DWINCEOEM -DWINCEINTERNAL -DWIN32 -DSTRICT -DARM -DARMV7 -D_ARM_ -D__RPC_ARM32__ -D_MIDL_USE_GUIDDEF_ -DNDEBUG=1  -DNDIS60=1 -DINTERNATIONAL -DINTLMSG_CODEPAGE=1252  -wd4007 -Zc:wchar_t- -Zc:forScope- -wd4867 -wd4430 -wd4603 -wd4627 -wd4100 -wd4201 -wd4115 -wd4214 -wd4049 -wd4505 -MT -U_MT /FC -W3     /GR- .\ParaNdis_AbstractPath.cpp .\ParaNdis_Common.cpp .\ParaNdis_CX.cpp .\ParaNdis_Debug.cpp .\ParaNdis_GuestAnnounce.cpp .\ParaNdis_Oid.cpp .\ParaNdis_Protocol.cpp .\ParaNdis_RX.cpp .\ParaNdis_TX.cpp .\ParaNdis_Util.cpp .\ParaNdis_VirtIO.cpp .\ParaNdis_VirtQueue.cpp .\sw_offload.cpp 
+BUILD: [01:0000005203:INFO  ] ParaNdis_AbstractPath.cpp
+BUILD: [01:0000005969:PROGC ] Error(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\common\".
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000005969:INFO  ]         with
+BUILD: [01:0000005969:INFO  ]         [
+BUILD: [01:0000005969:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000005969:INFO  ]         ]
+BUILD: [01:0000005969:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000005969:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000005969:INFO  ]         with
+BUILD: [01:0000005969:INFO  ]         [
+BUILD: [01:0000005969:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000005969:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000005969:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000005969:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000005969:INFO  ]         ]
+BUILD: [01:0000005969:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000005969:INFO  ]         with
+BUILD: [01:0000005969:INFO  ]         [
+BUILD: [01:0000005969:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000005969:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000005969:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000005969:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000005969:INFO  ]         ]
+BUILD: [01:0000005969:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000005969:INFO  ]         with
+BUILD: [01:0000005969:INFO  ]         [
+BUILD: [01:0000005969:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000005969:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000005969:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000005969:INFO  ]         ]
+BUILD: [01:0000005969:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000005969:INFO  ]         with
+BUILD: [01:0000005969:INFO  ]         [
+BUILD: [01:0000005969:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000005969:INFO  ]         ]
+BUILD: [01:0000006047:INFO  ] ParaNdis_Common.cpp
+BUILD: [01:0000006532:PROGC ] Warning(s) in directory "C:\wince800\platform\qemu\drivers\netkvm\common\".
+BUILD: [01:0000006532:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_common.cpp(1240) : warning C4800: 'ULONGLONG' : forcing value to bool 'true' or 'false' (performance warning)
+BUILD: [01:0000006563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(864) : error C2143: syntax error : missing ')' before '...'
+BUILD: [01:0000006563:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_common.cpp(2236) : see reference to function template instantiation 'void ParaNdis_PrintTable<80,10,const CCHAR*,ParaNdis_PrintCharArray::<lambda_55d6ab9a3d700ac19bf6651b9e438856>>(int,TTable,size_t,LPCSTR,AccessorsFuncs)' being compiled
+BUILD: [01:0000006563:INFO  ]         with
+BUILD: [01:0000006563:INFO  ]         [
+BUILD: [01:0000006563:INFO  ]             TTable=const CCHAR *,
+BUILD: [01:0000006563:INFO  ]             AccessorsFuncs=ParaNdis_PrintCharArray::<lambda_55d6ab9a3d700ac19bf6651b9e438856>
+BUILD: [01:0000006563:INFO  ]         ]
+BUILD: [01:0000006563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(864) : error C2059: syntax error : ')'
+BUILD: [01:0000006610:INFO  ] ParaNdis_CX.cpp
+BUILD: [01:0000007047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000007047:INFO  ]         with
+BUILD: [01:0000007047:INFO  ]         [
+BUILD: [01:0000007047:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000007047:INFO  ]         ]
+BUILD: [01:0000007047:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000007047:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000007047:INFO  ]         with
+BUILD: [01:0000007047:INFO  ]         [
+BUILD: [01:0000007047:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000007047:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007047:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007047:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007047:INFO  ]         ]
+BUILD: [01:0000007047:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000007047:INFO  ]         with
+BUILD: [01:0000007047:INFO  ]         [
+BUILD: [01:0000007047:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000007047:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007047:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007047:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007063:INFO  ]         ]
+BUILD: [01:0000007063:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000007063:INFO  ]         with
+BUILD: [01:0000007063:INFO  ]         [
+BUILD: [01:0000007063:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007063:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007063:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007063:INFO  ]         ]
+BUILD: [01:0000007063:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000007063:INFO  ]         with
+BUILD: [01:0000007063:INFO  ]         [
+BUILD: [01:0000007063:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000007063:INFO  ]         ]
+BUILD: [01:0000007094:INFO  ] ParaNdis_Debug.cpp
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(138) : error C2146: syntax error : missing ';' before identifier 'CallbackRecord'
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(146) : error C2065: 'DPFLTR_DEFAULT_ID' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(146) : error C2065: 'DPFLTR_MASK' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(199) : error C3861: 'KeInitializeCallbackRecord': identifier not found
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(205) : error C2065: 'pd' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(205) : error C3861: 'MmGetSystemRoutineAddress': identifier not found
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(206) : error C2065: 'pd' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(227) : error C3861: 'BugCheckDeregisterCallback': identifier not found
+BUILD: [01:0000007453:INFO  ] ParaNdis_GuestAnnounce.cpp
+BUILD: [01:0000007828:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000007828:INFO  ]         with
+BUILD: [01:0000007828:INFO  ]         [
+BUILD: [01:0000007828:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000007828:INFO  ]         ]
+BUILD: [01:0000007828:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000007828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000007828:INFO  ]         with
+BUILD: [01:0000007828:INFO  ]         [
+BUILD: [01:0000007828:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000007828:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007828:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007828:INFO  ]         ]
+BUILD: [01:0000007828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000007828:INFO  ]         with
+BUILD: [01:0000007828:INFO  ]         [
+BUILD: [01:0000007828:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000007828:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007828:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007828:INFO  ]         ]
+BUILD: [01:0000007828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000007828:INFO  ]         with
+BUILD: [01:0000007828:INFO  ]         [
+BUILD: [01:0000007828:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000007828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000007828:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000007828:INFO  ]         ]
+BUILD: [01:0000007828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000007828:INFO  ]         with
+BUILD: [01:0000007828:INFO  ]         [
+BUILD: [01:0000007828:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000007828:INFO  ]         ]
+BUILD: [01:0000007907:INFO  ] ParaNdis_Oid.cpp
+BUILD: [01:0000008344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000008344:INFO  ]         with
+BUILD: [01:0000008344:INFO  ]         [
+BUILD: [01:0000008344:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000008344:INFO  ]         ]
+BUILD: [01:0000008344:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000008344:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000008344:INFO  ]         with
+BUILD: [01:0000008344:INFO  ]         [
+BUILD: [01:0000008344:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000008344:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008344:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008344:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008344:INFO  ]         ]
+BUILD: [01:0000008344:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000008344:INFO  ]         with
+BUILD: [01:0000008344:INFO  ]         [
+BUILD: [01:0000008344:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000008344:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008344:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008344:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008344:INFO  ]         ]
+BUILD: [01:0000008344:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000008344:INFO  ]         with
+BUILD: [01:0000008344:INFO  ]         [
+BUILD: [01:0000008344:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008344:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008344:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008344:INFO  ]         ]
+BUILD: [01:0000008344:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000008344:INFO  ]         with
+BUILD: [01:0000008344:INFO  ]         [
+BUILD: [01:0000008344:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000008344:INFO  ]         ]
+BUILD: [01:0000008360:INFO  ] ParaNdis_Protocol.cpp
+BUILD: [01:0000008703:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000008703:INFO  ]         with
+BUILD: [01:0000008703:INFO  ]         [
+BUILD: [01:0000008703:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000008703:INFO  ]         ]
+BUILD: [01:0000008703:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000008703:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000008703:INFO  ]         with
+BUILD: [01:0000008703:INFO  ]         [
+BUILD: [01:0000008703:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000008703:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008703:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008703:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008703:INFO  ]         ]
+BUILD: [01:0000008703:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000008703:INFO  ]         with
+BUILD: [01:0000008703:INFO  ]         [
+BUILD: [01:0000008703:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000008703:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008703:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008703:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008703:INFO  ]         ]
+BUILD: [01:0000008703:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000008703:INFO  ]         with
+BUILD: [01:0000008703:INFO  ]         [
+BUILD: [01:0000008703:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000008703:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000008703:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000008703:INFO  ]         ]
+BUILD: [01:0000008703:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000008703:INFO  ]         with
+BUILD: [01:0000008703:INFO  ]         [
+BUILD: [01:0000008703:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000008703:INFO  ]         ]
+BUILD: [01:0000008735:INFO  ] ParaNdis_RX.cpp
+BUILD: [01:0000009110:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000009110:INFO  ]         with
+BUILD: [01:0000009110:INFO  ]         [
+BUILD: [01:0000009110:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000009110:INFO  ]         ]
+BUILD: [01:0000009110:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000009110:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000009110:INFO  ]         with
+BUILD: [01:0000009110:INFO  ]         [
+BUILD: [01:0000009110:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000009110:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000009110:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000009110:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000009110:INFO  ]         ]
+BUILD: [01:0000009110:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000009110:INFO  ]         with
+BUILD: [01:0000009110:INFO  ]         [
+BUILD: [01:0000009110:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000009110:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000009110:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000009110:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000009110:INFO  ]         ]
+BUILD: [01:0000009110:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000009110:INFO  ]         with
+BUILD: [01:0000009110:INFO  ]         [
+BUILD: [01:0000009110:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000009110:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000009110:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000009110:INFO  ]         ]
+BUILD: [01:0000009110:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000009110:INFO  ]         with
+BUILD: [01:0000009110:INFO  ]         [
+BUILD: [01:0000009110:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000009110:INFO  ]         ]
+BUILD: [01:0000009125:INFO  ] ParaNdis_TX.cpp
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(773) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\ndis56common.h(407) : see declaration of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(781) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\ndis56common.h(407) : see declaration of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(790) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009688:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\ndis56common.h(407) : see declaration of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009688:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(983) : error C2059: syntax error : '{'
+BUILD: [01:0000009688:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(983) : error C2143: syntax error : missing ';' before '{'
+BUILD: [01:0000009719:INFO  ] ParaNdis_Util.cpp
+BUILD: [01:0000010063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_util.cpp(92) : error C3861: 'BitScanForward': identifier not found
+BUILD: [01:0000010063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_util.cpp(98) : error C2065: 'INVALID_PROCESSOR_INDEX' : undeclared identifier
+BUILD: [01:0000010094:INFO  ] ParaNdis_VirtIO.cpp
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(111) : error C2065: 'PCI_WHICHSPACE_CONFIG' : undeclared identifier
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(214) : error C2664: 'READ_REGISTER_ULONG' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const ULONG *const '
+BUILD: [01:0000010453:INFO  ]         Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(239) : error C2664: 'READ_REGISTER_UCHAR' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const UCHAR *const '
+BUILD: [01:0000010453:INFO  ]         Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(265) : error C2664: 'READ_REGISTER_USHORT' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const USHORT *const '
+BUILD: [01:0000010469:INFO  ]         Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000010469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(397) : error C2065: 'PCI_WHICHSPACE_CONFIG' : undeclared identifier
+BUILD: [01:0000010485:INFO  ] ParaNdis_VirtQueue.cpp
+BUILD: [01:0000010828:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(454) : error C2039: 'GetListEntry' : is not a member of 'CTXDescriptor'
+BUILD: [01:0000010828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-virtqueue.h(103) : see declaration of 'CTXDescriptor'
+BUILD: [01:0000010828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(449) : while compiling class template member function 'ULONG CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::PushBack(TEntryType *)'
+BUILD: [01:0000010828:INFO  ]         with
+BUILD: [01:0000010828:INFO  ]         [
+BUILD: [01:0000010828:INFO  ]             TEntryType=CTXDescriptor,
+BUILD: [01:0000010828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000010828:INFO  ]             TCountingStrategy=CNonCountingObject
+BUILD: [01:0000010828:INFO  ]         ]
+BUILD: [01:0000010828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtqueue.cpp(266) : see reference to function template instantiation 'ULONG CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::PushBack(TEntryType *)' being compiled
+BUILD: [01:0000010828:INFO  ]         with
+BUILD: [01:0000010828:INFO  ]         [
+BUILD: [01:0000010828:INFO  ]             TEntryType=CTXDescriptor,
+BUILD: [01:0000010828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000010828:INFO  ]             TCountingStrategy=CNonCountingObject
+BUILD: [01:0000010828:INFO  ]         ]
+BUILD: [01:0000010828:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-virtqueue.h(348) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000010828:INFO  ]         with
+BUILD: [01:0000010828:INFO  ]         [
+BUILD: [01:0000010828:INFO  ]             TEntryType=CTXDescriptor,
+BUILD: [01:0000010828:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000010828:INFO  ]             TCountingStrategy=CNonCountingObject
+BUILD: [01:0000010828:INFO  ]         ]
+BUILD: [01:0000010844:INFO  ] sw_offload.cpp
+BUILD: [01:0000011188:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000011188:INFO  ]         with
+BUILD: [01:0000011188:INFO  ]         [
+BUILD: [01:0000011188:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000011188:INFO  ]         ]
+BUILD: [01:0000011188:INFO  ]         Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+BUILD: [01:0000011188:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(517) : while compiling class template member function 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)'
+BUILD: [01:0000011188:INFO  ]         with
+BUILD: [01:0000011188:INFO  ]         [
+BUILD: [01:0000011188:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000011188:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000011188:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000011188:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000011188:INFO  ]         ]
+BUILD: [01:0000011188:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(477) : see reference to function template instantiation 'CObserver<TNotifyObject> *CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>::Pop_LockLess(void)' being compiled
+BUILD: [01:0000011188:INFO  ]         with
+BUILD: [01:0000011188:INFO  ]         [
+BUILD: [01:0000011188:INFO  ]             TNotifyObject=SMNotifications,
+BUILD: [01:0000011188:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000011188:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000011188:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000011188:INFO  ]         ]
+BUILD: [01:0000011188:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis_designpatterns.h(75) : see reference to class template instantiation 'CNdisList<TEntryType,TAccessStrategy,TCountingStrategy>' being compiled
+BUILD: [01:0000011188:INFO  ]         with
+BUILD: [01:0000011188:INFO  ]         [
+BUILD: [01:0000011188:INFO  ]             TEntryType=CObserver<SMNotifications>,
+BUILD: [01:0000011188:INFO  ]             TAccessStrategy=CRawAccess,
+BUILD: [01:0000011188:INFO  ]             TCountingStrategy=CCountingObject
+BUILD: [01:0000011188:INFO  ]         ]
+BUILD: [01:0000011188:INFO  ]         c:\wince800\platform\qemu\drivers\netkvm\common\parandis-sm.h(242) : see reference to class template instantiation 'CObservee<TNotifyObject>' being compiled
+BUILD: [01:0000011188:INFO  ]         with
+BUILD: [01:0000011188:INFO  ]         [
+BUILD: [01:0000011188:INFO  ]             TNotifyObject=SMNotifications
+BUILD: [01:0000011188:INFO  ]         ]
+BUILD: [01:0000011203:INFO  ] Generating Code...
+BUILD: [01:0000011235:ERRORE] NMAKE : fatal error U1077: 'C:\WINCE800\sdk\bin\i386\ARM\cl.exe' : return code '0x2'
+BUILD: [01:0000011235:INFO  ] Stop.
+BUILD: [01:0000011250:ERRORE] TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1 failed - rc = 2.
+BUILD: [00:0000011266:PROGC ]                        Files  Warnings  Errors
+BUILD: [00:0000011266:PROGC ] Midl                       0         0       0
+BUILD: [00:0000011266:PROGC ] Message                    0         0       0
+BUILD: [00:0000011266:PROGC ] Precomp Header             0         0       0
+BUILD: [00:0000011266:PROGC ] Resource                   0         0       0
+BUILD: [00:0000011266:PROGC ] XRPack                     0         0       0
+BUILD: [00:0000011266:PROGC ] MASM                       0         0       0
+BUILD: [00:0000011266:PROGC ] SHASM                      0         0       0
+BUILD: [00:0000011266:PROGC ] ARMASM                     0         0       0
+BUILD: [00:0000011266:PROGC ] C++                        0         1      31
+BUILD: [00:0000011266:PROGC ] C                          0         0       0
+BUILD: [00:0000011282:PROGC ] CheckLibs                  0         0       0
+BUILD: [00:0000011282:PROGC ] Static Libraries           0         0       0
+BUILD: [00:0000011282:PROGC ] Exe's                      0         0       0
+BUILD: [00:0000011282:PROGC ] Dll's                      0         0       0
+BUILD: [00:0000011282:PROGC ] Preprocess deffile         0         0       0
+BUILD: [00:0000011282:PROGC ] Resx                       0         0       0
+BUILD: [00:0000011282:PROGC ] CSharp Compile             0         0       0
+BUILD: [00:0000011282:PROGC ] VCProj Compile             0         0       0
+BUILD: [00:0000011282:PROGC ] NETCF Build                0         0       0
+BUILD: [00:0000011282:PROGC ] Localization               0         0       0
+BUILD: [00:0000011282:PROGC ] Other                      0         0       2
+BUILD: [00:0000011282:PROGC ] 
+BUILD: [00:0000011282:PROGC ] Total                      0         1      33
+BUILD: [00:0000011282:PROGC ] 
+BUILD: [00:0000011282:PROGC ] 1 Warnings,  33 Errors
+BUILD: [00:0000011282:PROGC ] GetSystemTimes (seconds): Idle: 6     Kernel: 12    User: 10   
+BUILD: [00:0000011282:PROGC ] Elapsed  time  (seconds): 11   

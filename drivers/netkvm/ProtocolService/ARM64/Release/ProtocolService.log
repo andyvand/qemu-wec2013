@@ -1,0 +1,12 @@
+﻿  Driver.Initial.props: _NT_TARGET_VERSION=0x0A00 SUBSYSTEM_NATVER= mismatch=
+  _NT_TARGET_MAJ=
+  _RHEL_RELEASE_VERSION_=6
+  _BUILD_MAJOR_VERSION_=101
+  _BUILD_MINOR_VERSION_=58000
+  guid.cpp
+  Names.cpp
+  ProtocolService.cpp
+  Service.cpp
+  uninstall.cpp
+  Generating Code...
+  ProtocolService.vcxproj -> C:\WINCE800\platform\qemu\drivers\netkvm\ProtocolService\ARM64\netkvmp.exe

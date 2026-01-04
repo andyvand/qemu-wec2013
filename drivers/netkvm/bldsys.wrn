@@ -1,0 +1,6 @@
+BUILD: [00:0000004688:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: lan9118.c. {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(34)"}
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: os.c. {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(35)"}
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: smsc9118.c. {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(36)"}
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: platform.c. {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(37)"}
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: util.S. {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(38)"}
+BUILD: [01:0000006532:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_common.cpp(1240) : warning C4800: 'ULONGLONG' : forcing value to bool 'true' or 'false' (performance warning) {log="C:\WINCE800\platform\qemu\drivers\netkvm\bldsys.log(47)"}

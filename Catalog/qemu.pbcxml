@@ -20,9 +20,11 @@
     <BspItemId>Item:qemu:QemuPL011:Drivers</BspItemId>
     <BspItemId>Item:qemu:QemuPL041:Drivers</BspItemId>
     <BspItemId>Item:qemu:QemuPL050:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuVirtio:Drivers</BspItemId>
     <BspItemId>Item:qemu:QemuVirtioBLK:Drivers</BspItemId>
     <BspItemId>Item:qemu:QemuVirtioTablet:Drivers</BspItemId>
     <BspItemId>Item:qemu:QemuLAN9118:Drivers</BspItemId>
+    <BspItemId>Item:qemu:QemuNetKVM:Drivers</BspItemId>
   </Bsp>
   <Item Id="Item:qemu:QemuOAL:OAL">
     <Title>OAL Loader</Title>
@@ -79,6 +81,20 @@
     <Type>BspSpecific</Type>
     <Variable>BSP_QEMU_PL050</Variable>
     <Location>\DRIVERS\PL050</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuVirtio:Drivers">
+    <Title>Virtio Driver Library</Title>
+    <Description>Virtio Driver Library</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_VIRTIO</Variable>
+    <Location>\DRIVERS\VIRTIO</Location>
+  </Item>
+  <Item Id="Item:qemu:QemuNetKVM:Drivers">
+    <Title>Virtio Driver Library</Title>
+    <Description>Network KVM Driver</Description>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_QEMU_NETKVM</Variable>
+    <Location>\DRIVERS\NETKVM</Location>
   </Item>
   <Item Id="Item:qemu:QemuVirtioTablet:Drivers">
     <Title>VirtioTablet Driver</Title>

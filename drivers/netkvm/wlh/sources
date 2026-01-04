@@ -1,0 +1,51 @@
+# All rights reserved ADENEO EMBEDDED 2010
+!IF 0
+
+Copyright (c) 1995-2000 Microsoft Corporation.  All rights reserved.
+
+Module Name:
+
+    sources.
+
+Abstract:
+
+    This file specifies the target component being built and the list of
+    sources files needed to build that component.  Also specifies optional
+    compiler switches and libraries that are unique for the component being
+    built.
+
+!ENDIF
+
+!IF "$(BSP_QEMU_LAN9118)" == ""
+SKIPBUILD=1
+!ENDIF
+
+RELEASETYPE=PLATFORM
+TARGETNAME=NetKVM
+TARGETTYPE=DYNLINK
+WINCEREL=1
+
+DLLENTRY=DllEntry
+
+INCLUDES=$(INCLUDES);..\..\virtio;..;.;..\common
+CDEFINES=$(CDEFINES) -DNDIS60=1 -DKVMNETDRIVER=1
+
+!IF "$(WINCEDEBUG)" == "debug"
+CDEFINES=$(CDEFINES) -DDEBUG
+!ENDIF
+
+TARGETLIBS=$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+	$(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\ceddk.lib \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\ndis.lib \
+	$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\winsock.lib
+
+SOURCELIBS= \
+    $(_PLATLIB)\$(_CPUDEPPATH)\virtio.lib \
+    $(_PLATLIB)\$(_CPUDEPPATH)\netkvmcommon.lib
+
+SOURCES=		\
+	ParaNdis6_Driver.cpp	\
+	ParaNdis6_Impl.cpp	\
+	ParaNdis6_Oid.cpp	\
+	ParaNdis6_RSS.cpp \
+	ParaNdis6.rc

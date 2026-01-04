@@ -1,0 +1,5 @@
+BUILD: [Thread:SystemTickCount:Type  ] Message
+BUILD: [01:0000002641:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000004219:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000005219:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'
+BUILD: [01:0000005875:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\protocolservice\service.h(47) : warning C4183: 'Handle': missing return type; assumed to be a member function returning 'int'

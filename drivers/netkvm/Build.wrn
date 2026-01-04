@@ -1,0 +1,7 @@
+BUILD: [Thread:SystemTickCount:Type  ] Message
+BUILD: [00:0000004688:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: lan9118.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: os.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: smsc9118.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: platform.c.
+BUILD: [00:0000004703:WARNN ] C:\wince800\platform\qemu\drivers\netkvm\wlh\: Missing source file: util.S.
+BUILD: [01:0000006532:WARNN ] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_common.cpp(1240) : warning C4800: 'ULONGLONG' : forcing value to bool 'true' or 'false' (performance warning)

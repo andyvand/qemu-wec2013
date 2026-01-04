@@ -1,0 +1,6 @@
+OBJECTS=\
+    C:\wince800\platform\qemu\drivers\netkvm\protocolservice\obj\ARMV7\retail\Names.obj\
+    C:\wince800\platform\qemu\drivers\netkvm\protocolservice\obj\ARMV7\retail\ProtocolService.obj\
+    C:\wince800\platform\qemu\drivers\netkvm\protocolservice\obj\ARMV7\retail\Service.obj\
+    C:\wince800\platform\qemu\drivers\netkvm\protocolservice\obj\ARMV7\retail\uninstall.obj
+

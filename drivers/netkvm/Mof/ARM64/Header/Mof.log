@@ -1,0 +1,10 @@
+﻿  Microsoft (R) MOF Compiler Version 10.0.26100.1
+  Copyright (c) Microsoft Corp. 1997-2006. All rights reserved.
+  Parsing MOF file: ..\Common\netkvm.mof
+  MOF file has been successfully parsed
+  Storing Binary MOF data in .\netkvm.bmf
+  Done!
+  Microsoft (R) WDM Extensions To WMI MOF Checking Utility  Version 1.50.0000
+  Copyright (c) Microsoft Corp. 1997-2000. All rights reserved.
+  
+  Binary mof file .\netkvm.bmf expanded to 6168 bytes

@@ -1,0 +1,35 @@
+BUILD: [Thread:SystemTickCount:Type  ] Message
+BUILD: [02:0000004953:ERRORE] NMAKE : fatal error U1073: don't know how to make 'C:\wince800\platform\qemu\drivers\netkvm\wlh\obj\ARMV7\retail\lan9118.obj'
+BUILD: [02:0000004969:ERRORE] TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1 failed - rc = 2.
+BUILD: [01:0000005969:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000006563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(864) : error C2143: syntax error : missing ')' before '...'
+BUILD: [01:0000006563:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(864) : error C2059: syntax error : ')'
+BUILD: [01:0000007047:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(138) : error C2146: syntax error : missing ';' before identifier 'CallbackRecord'
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(146) : error C2065: 'DPFLTR_DEFAULT_ID' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(146) : error C2065: 'DPFLTR_MASK' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(199) : error C3861: 'KeInitializeCallbackRecord': identifier not found
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(205) : error C2065: 'pd' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(205) : error C3861: 'MmGetSystemRoutineAddress': identifier not found
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(206) : error C2065: 'pd' : undeclared identifier
+BUILD: [01:0000007422:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_debug.cpp(227) : error C3861: 'BugCheckDeregisterCallback': identifier not found
+BUILD: [01:0000007828:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000008344:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000008703:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000009110:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(773) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(781) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009672:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(790) : error C2039: 'DmaHandle' : is not a member of '_PARANDIS_ADAPTER'
+BUILD: [01:0000009688:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(983) : error C2059: syntax error : '{'
+BUILD: [01:0000009688:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_tx.cpp(983) : error C2143: syntax error : missing ';' before '{'
+BUILD: [01:0000010063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_util.cpp(92) : error C3861: 'BitScanForward': identifier not found
+BUILD: [01:0000010063:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_util.cpp(98) : error C2065: 'INVALID_PROCESSOR_INDEX' : undeclared identifier
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(111) : error C2065: 'PCI_WHICHSPACE_CONFIG' : undeclared identifier
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(214) : error C2664: 'READ_REGISTER_ULONG' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const ULONG *const '
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(239) : error C2664: 'READ_REGISTER_UCHAR' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const UCHAR *const '
+BUILD: [01:0000010453:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(265) : error C2664: 'READ_REGISTER_USHORT' : cannot convert parameter 1 from 'ULONG_PTR' to 'volatile const USHORT *const '
+BUILD: [01:0000010469:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis_virtio.cpp(397) : error C2065: 'PCI_WHICHSPACE_CONFIG' : undeclared identifier
+BUILD: [01:0000010828:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(454) : error C2039: 'GetListEntry' : is not a member of 'CTXDescriptor'
+BUILD: [01:0000011188:ERRORE] c:\wince800\platform\qemu\drivers\netkvm\common\parandis-util.h(523) : error C2440: 'return' : cannot convert from 'SMNotifications *' to 'CObserver<TNotifyObject> *'
+BUILD: [01:0000011235:ERRORE] NMAKE : fatal error U1077: 'C:\WINCE800\sdk\bin\i386\ARM\cl.exe' : return code '0x2'
+BUILD: [01:0000011250:ERRORE] TargetCompilePass  -nologo BUILDMSG=Stop.  BUILDROOT=C:\WINCE800\platform\qemu /F C:\WINCE800\public\common\oak\misc\makefile.def NOLINK=1 NOPASS0=1 failed - rc = 2.
