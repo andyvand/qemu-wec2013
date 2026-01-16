@@ -2,7 +2,7 @@
 
 expected configuration:
 
-- 256MB RAM
+- 1GB RAM
 - PL011 for kernel debug output (UART0) and KITL (UART2)
 - PL111 display (1024x600)
 - PL050 keyboard/mouse
@@ -10,6 +10,7 @@ expected configuration:
 - PL041 audio output
 - virtio-tablet-device (on 0x91130600)
 - virtio-blk-device (on 0x91130400)
+- SMSC LAN9118
 - you will need to convert generated NK.bin to flat image, then load it at 0x80000000 and set PC to entry point
 
 example usage (image available on github releases):
