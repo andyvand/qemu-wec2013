@@ -22,3 +22,4 @@ qemu-system-arm \
 Screenshots:
 ![desktop_wec2013](./desktop_wec2013.png)
 ![mshearts_wec2013](./mshearts_wec2013.png)
+![pumpkinos_wec2013](./PumpkinOS_wec2013.png)
